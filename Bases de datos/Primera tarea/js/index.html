@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de INSERTs</title>
+  </head>
+  <body>
+    <h1>Generador de INSERTs</h1>
+
+    <label for="nombreTabla">Nombre de la tabla:</label>
+    <input type="text" id="nombreTabla" placeholder="Ejemplo: locaciones" />
+    <br /><br />
+
+    <label for="campos">Nombres de los campos (separados por comas):</label>
+    <input
+      type="text"
+      id="campos"
+      placeholder="Ejemplo: id_locaciones, direccion, codigo_postal, ciudad, estado_provincia"
+    />
+    <br /><br />
+
+    <label for="imputLocacion">Datos de entrada (separados por líneas):</label>
+    <textarea
+      id="imputLocacion"
+      rows="10"
+      cols="50"
+      placeholder="Ejemplo: 1, Calle Falsa, 12345, Springfield, IL"
+    ></textarea>
+    <br /><br />
+
+    <button onclick="generarInsert()">Generar INSERTs</button>
+
+    <h2>Resultado:</h2>
+    <pre id="resultado"></pre>
+
+    <script>
+      function esNumerico(valor) {
+        return !isNaN(valor) && !isNaN(parseFloat(valor));
+      }
+
+      function generarInsert() {
+        const nombreTabla = document.getElementById("nombreTabla").value.trim();
+        const campos = document
+          .getElementById("campos")
+          .value.trim()
+          .split(",")
+          .map((campo) => campo.trim());
+        const locacion = document.getElementById("imputLocacion").value;
+        const lineas = locacion.split("\n");
+        const listaInserts = [];
+
+        lineas.forEach((linea) => {
+          if (linea.trim() === "") return;
+          const valores = linea.split(",").map((val) => val.trim());
+
+          // Asegurarse de que los valores tengan el mismo número de campos
+          if (valores.length !== campos.length) {
+            alert("El número de valores no coincide con el número de campos.");
+            return;
+          }
+
+          for (let i = 0; i < valores.length; i++) {
+            if (valores[i] === "") {
+              valores[i] = "NULL"; // Asigna NULL a campos vacíos
+            } else if (!esNumerico(valores[i])) {
+              valores[i] = `"${valores[i]}"`; // Agrega comillas a valores no numéricos
+            }
+          }
+
+          const insert = `INSERT INTO ${nombreTabla} (${campos.join(
+            ", "
+          )}) VALUES (${valores.join(", ")});`;
+          listaInserts.push(insert);
+        });
+
+        document.getElementById("resultado").textContent =
+          listaInserts.join("\n");
+      }
+    </script>
+  </body>
+</html>
