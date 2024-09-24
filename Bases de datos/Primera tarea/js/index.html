@@ -3,36 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de INSERTs</title>
+    <title>Generador de sentencias INSERT SQL</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Generador de INSERTs</h1>
+    <div class="container mt-5">
+      <div class="card" style="width: 30rem; margin: auto">
+        <div class="card-body">
+          <h1 class="card-title">Generador de INSERTS</h1>
 
-    <label for="nombreTabla">Nombre de la tabla:</label>
-    <input type="text" id="nombreTabla" placeholder="Ejemplo: locaciones" />
-    <br /><br />
+          <div class="mb-3">
+            <label for="nombreTabla" class="form-label"
+              >Ingrese el nombre de la Tabla:</label
+            >
+            <input
+              type="text"
+              id="nombreTabla"
+              class="form-control"
+              placeholder="Ejemplo: locaciones"
+            />
+          </div>
 
-    <label for="campos">Nombres de los campos (separados por comas):</label>
-    <input
-      type="text"
-      id="campos"
-      placeholder="Ejemplo: id_locaciones, direccion, codigo_postal, ciudad, estado_provincia"
-    />
-    <br /><br />
+          <div class="mb-3">
+            <label for="campos" class="form-label"
+              >Nombres de los campos (separados por comas):</label
+            >
+            <input
+              type="text"
+              id="campos"
+              class="form-control"
+              placeholder="Ejemplo: id_locaciones, direccion, codigo_postal, ciudad, estado_provincia"
+            />
+          </div>
 
-    <label for="imputLocacion">Datos de entrada (separados por líneas):</label>
-    <textarea
-      id="imputLocacion"
-      rows="10"
-      cols="50"
-      placeholder="Ejemplo: 1, Calle Falsa, 12345, Springfield, IL"
-    ></textarea>
-    <br /><br />
+          <div class="mb-3">
+            <label for="inputLocacion" class="form-label"
+              >Datos de entrada sepadado por comas:</label
+            >
+            <textarea
+              id="inputLocacion"
+              class="form-control"
+              rows="5"
+              placeholder="Ejemplo: 110,Accounting,205,1700"
+            ></textarea>
+          </div>
 
-    <button onclick="generarInsert()">Generar INSERTs</button>
+          <button onclick="generarInsert()" class="btn btn-primary">
+            Generar INSERTs
+          </button>
+        </div>
+      </div>
 
-    <h2>Resultado:</h2>
-    <pre id="resultado"></pre>
+      <h2 class="mt-5">Resultado:</h2>
+      <pre id="resultado" class="bg-light p-3 border rounded"></pre>
+    </div>
 
     <script>
       function esNumerico(valor) {
@@ -46,7 +75,7 @@
           .value.trim()
           .split(",")
           .map((campo) => campo.trim());
-        const locacion = document.getElementById("imputLocacion").value;
+        const locacion = document.getElementById("inputLocacion").value;
         const lineas = locacion.split("\n");
         const listaInserts = [];
 
@@ -54,9 +83,13 @@
           if (linea.trim() === "") return;
           const valores = linea.split(",").map((val) => val.trim());
 
-          // Asegurarse de que los valores tengan el mismo número de campos
+          // Corroborar el número de campos
           if (valores.length !== campos.length) {
-            alert("El número de valores no coincide con el número de campos.");
+            Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: "El número de valores no coincide con el número de campos.",
+            });
             return;
           }
 
@@ -78,5 +111,13 @@
           listaInserts.join("\n");
       }
     </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
