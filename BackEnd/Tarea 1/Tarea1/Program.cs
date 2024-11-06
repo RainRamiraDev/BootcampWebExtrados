@@ -1,9 +1,16 @@
 ﻿
+
+using System;
 using Tarea1;
-using static Tarea1.Tablero;
 
 
 Tablero nuevoTablero = new Tablero();
+Console.WriteLine("Estas son las Coordenadas del tablero de ajedrez:");
+nuevoTablero.ImprimirCoordenadas();
 
-Console.WriteLine("Estas son las Coordenadas del tablero de ajedrez!");
-nuevoTablero.ObtenerCoordenadas();
+Console.WriteLine("\n");
+
+Console.ForegroundColor = ConsoleColor.Magenta;
+
+Reina ochoReinas = new Reina();
+ochoReinas.Resolver();

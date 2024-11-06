@@ -1,23 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tarea1
 {
     internal class Tablero
     {
-        private List<String> Coordenadas = new List<String>();
+        private List<string> Coordenadas = new List<string>();
 
-        
         public Tablero()
         {
-
             AgregarCoordenadas();
-
         }
 
+
+        //Se llena la lista de coordenadas de un tablero 8x8
         public void AgregarCoordenadas()
         {
             string[] columnas = { "a", "b", "c", "d", "e", "f", "g", "h" };
@@ -28,27 +24,34 @@ namespace Tarea1
                     Coordenadas.Add($"{columna}{fila}");
                 }
             }
-
-
         }
 
-        public void ObtenerCoordenadas()
+        // Obtiene la coordenada de ajedrez dada una fila y columna
+        public string ObtenerCoordenada(int fila, int columna)
         {
-            for (int i = 0; i < Coordenadas.Count; i++)
-            {
-                // Imprime la coordenada seguida de un |, excepto después de la última
-                if (i < Coordenadas.Count - 1)
-                {
-                    Console.Write($"{Coordenadas[i]} | ");
-                }
-                else
-                {
-                    Console.Write(Coordenadas[i]); // Sin el separador al final
-                }
-            }
-            Console.WriteLine(); // Nueva línea al final
+            return Coordenadas[fila * 8 + columna];
         }
 
+        // Imprime todas las coordenadas del tablero en formato 8x8
+        public void ImprimirCoordenadas()
+        {
+            string separadorHorizontal = "-".PadLeft(4 * 8 - 1, '-');
 
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+
+            for (int fila = 0; fila < 8; fila++)
+            {
+                for (int columna = 0; columna < 8; columna++)
+                {
+                    Console.Write($"{ObtenerCoordenada(fila, columna),-3}");
+                    if (columna < 7)
+                        Console.Write("|");
+                }
+                Console.WriteLine();
+
+                if (fila < 7)
+                    Console.WriteLine(separadorHorizontal);
+            }
+        }
     }
 }
