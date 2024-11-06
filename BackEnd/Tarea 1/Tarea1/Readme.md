@@ -1,4 +1,3 @@
-﻿
 # Tarea Número 1: Resolver el problema de las 8 Reinas
 
 Este programa resuelve el clásico problema de las 8 reinas utilizando el algoritmo de **backtracking**. El objetivo es colocar 8 reinas en un tablero de ajedrez de tamaño 8x8 de manera que ninguna reina se amenace a otra. 
@@ -17,11 +16,10 @@ Por ejemplo:
   - La reina en la fila 2 está en la columna 1.
   - La reina en la fila 3 está en la columna 6.
   - Y así sucesivamente...
- 
+
 <p align="center">
   <img src="https://mguerrero.me/wp-content/uploads/2020/05/posicion-1-2.png" alt="Tablero de Ajedre">
 </p>
-
 
 ### Restricciones del Problema
 
@@ -35,6 +33,20 @@ El algoritmo utilizado en este programa implementa una **búsqueda en profundida
 ### Soluciones
 
 El problema tiene **92 soluciones** posibles, de las cuales **12 son esencialmente distintas**, ya que las otras pueden obtenerse mediante rotaciones o reflexiones de las soluciones únicas. Cada solución representa una disposición de las 8 reinas en el tablero.
+
+### Rotaciones y Reflexiones
+
+Las soluciones del problema de las 8 reinas pueden ser **rotadas** o **reflejadas** para generar nuevas disposiciones que son esencialmente las mismas. Las transformaciones que se consideran son:
+
+- **Rotación de 90 grados**: las filas del tablero se convierten en columnas.
+- **Rotación de 180 grados**: el tablero se gira completamente, cambiando el orden de las filas y columnas.
+- **Rotación de 270 grados**: una rotación de 90 grados en sentido contrario.
+- **Reflexión Horizontal**: las columnas del tablero se invierten.
+- **Reflexión Vertical**: las filas se invierten.
+- **Reflexión Diagonal Principal**: las filas y las columnas se intercambian siguiendo la diagonal principal del tablero.
+- **Reflexión Diagonal Secundaria**: las filas y las columnas se intercambian siguiendo la diagonal secundaria del tablero.
+
+Estas rotaciones y reflexiones se utilizan para identificar soluciones que son **esencialmente la misma**, evitando contarlas más de una vez. Así, aunque el algoritmo pueda generar muchas configuraciones de soluciones, solo se consideran las soluciones únicas.
 
 ## Algoritmo Implementado
 
@@ -51,5 +63,4 @@ El algoritmo utilizado para resolver el problema es **Backtracking (Vuelta Atrá
 ### Cálculo de la Constante Š(n)
 
 El número Š(n) es una constante que indica la suma de las casillas donde se pueden ubicar las n reinas para todas las soluciones de un tablero de tamaño n x n. Este valor se calcula con la siguiente fórmula: `Š(n) = (n^3 + n) / 2`
-
 
