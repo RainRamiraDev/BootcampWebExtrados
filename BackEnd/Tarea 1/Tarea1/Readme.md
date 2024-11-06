@@ -64,3 +64,22 @@ El algoritmo utilizado para resolver el problema es **Backtracking (Vuelta Atrá
 
 El número Š(n) es una constante que indica la suma de las casillas donde se pueden ubicar las n reinas para todas las soluciones de un tablero de tamaño n x n. Este valor se calcula con la siguiente fórmula: `Š(n) = (n^3 + n) / 2`
 
+### Métodos de Comprobación de Soluciones Únicas
+
+Para asegurarse de que las soluciones generadas sean únicas, el programa verifica si una solución ya existe en la lista de soluciones únicas. Esto se realiza mediante rotaciones y reflexiones de las soluciones generadas, de acuerdo con los siguientes métodos:
+
+1. **`EsSimetrica(int[] solucion)`**: Este método verifica si una solución ya está en la lista de soluciones únicas, comparándola con todas las transformaciones (rotaciones y reflexiones) de las soluciones existentes.
+
+2. **`SonIguales(int[] solucion1, int[] solucion2)`**: Compara dos soluciones para determinar si son idénticas.
+
+3. **Funciones de Rotación y Reflexión**:
+   - **`Rotar90(int[] solucion)`**: Rota la solución 90 grados.
+   - **`Rotar180(int[] solucion)`**: Rota la solución 180 grados.
+   - **`Rotar270(int[] solucion)`**: Rota la solución 270 grados.
+   - **`ReflejarHorizontal(int[] solucion)`**: Realiza una reflexión horizontal sobre la solución.
+   - **`ReflejarVertical(int[] solucion)`**: Realiza una reflexión vertical sobre la solución.
+   - **`ReflejarDiagonalPrincipal(int[] solucion)`**: Realiza una reflexión sobre la diagonal principal de la solución.
+   - **`ReflejarDiagonalSecundaria(int[] solucion)`**: Realiza una reflexión sobre la diagonal secundaria de la solución.
+
+Estos métodos permiten generar todas las posibles transformaciones de una solución y comparar si alguna de ellas ya ha sido registrada como solución única.
+
