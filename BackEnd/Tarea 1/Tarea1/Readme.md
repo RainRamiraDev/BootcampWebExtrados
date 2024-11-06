@@ -17,6 +17,11 @@ Por ejemplo:
   - La reina en la fila 2 está en la columna 1.
   - La reina en la fila 3 está en la columna 6.
   - Y así sucesivamente...
+ 
+<p align="center">
+  <img src="https://mguerrero.me/wp-content/uploads/2020/05/posicion-1-2.png" alt="Tablero de Ajedre">
+</p>
+
 
 ### Restricciones del Problema
 
