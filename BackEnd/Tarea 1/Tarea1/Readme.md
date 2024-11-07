@@ -1,24 +1,9 @@
-# Tarea Número 1: Resolver el problema de las 8 Reinas
+# Tarea Número 1: Resolver el Problema de las 8 Reinas
 
-Este programa resuelve el clásico problema de las 8 reinas utilizando el algoritmo de **backtracking**. El objetivo es colocar 8 reinas en un tablero de ajedrez de tamaño 8x8 de manera que ninguna reina se amenace a otra. 
-
-## Descripción del Problema
-
-El problema de las 8 reinas es un rompecabezas propuesto por el ajedrecista alemán **Max Bezzel** en 1848. En el ajedrez, la reina puede atacar a cualquier pieza que se encuentre en su misma fila, columna o diagonal. El desafío consiste en encontrar una disposición de las 8 reinas en el tablero donde no se amenacen entre sí.
-
-### Representación de las Reinas
-
-Para representar la ubicación de las reinas en el tablero, se utiliza un vector de tamaño 8, donde cada índice del vector corresponde a una fila y el valor en ese índice representa la columna de la reina en esa fila.
-
-Por ejemplo:
-- Un vector como `(3, 1, 6, 2, 8, 6, 4, 7)` indica que:
-  - La reina en la fila 1 está en la columna 3.
-  - La reina en la fila 2 está en la columna 1.
-  - La reina en la fila 3 está en la columna 6.
-  - Y así sucesivamente...
+Este programa resuelve el clásico problema de las 8 reinas utilizando el algoritmo de **backtracking**. El objetivo es colocar 8 reinas en un tablero de ajedrez de 8x8 de manera que ninguna reina amenace a otra.
 
 <p align="center">
-  <img src="https://mguerrero.me/wp-content/uploads/2020/05/posicion-1-2.png" alt="Tablero de Ajedre">
+  <img src="https://mguerrero.me/wp-content/uploads/2020/05/posicion-1-2.png" alt="Tablero de Ajedrez">
 </p>
 
 ### Restricciones del Problema
@@ -33,6 +18,8 @@ El algoritmo utilizado en este programa implementa una **búsqueda en profundida
 ### Soluciones
 
 El problema tiene **92 soluciones** posibles, de las cuales **12 son esencialmente distintas**, ya que las otras pueden obtenerse mediante rotaciones o reflexiones de las soluciones únicas. Cada solución representa una disposición de las 8 reinas en el tablero.
+
+***A modo ilustrativo, la consola imprimirá en color verde aquellas soluciones pertenecientes a las 12 soluciones únicas.***
 
 ### Rotaciones y Reflexiones
 
@@ -80,6 +67,3 @@ Para asegurarse de que las soluciones generadas sean únicas, el programa verifi
    - **`ReflejarVertical(int[] solucion)`**: Realiza una reflexión vertical sobre la solución.
    - **`ReflejarDiagonalPrincipal(int[] solucion)`**: Realiza una reflexión sobre la diagonal principal de la solución.
    - **`ReflejarDiagonalSecundaria(int[] solucion)`**: Realiza una reflexión sobre la diagonal secundaria de la solución.
-
-Estos métodos permiten generar todas las posibles transformaciones de una solución y comparar si alguna de ellas ya ha sido registrada como solución única.
-
