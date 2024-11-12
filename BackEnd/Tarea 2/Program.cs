@@ -1,16 +1,16 @@
-﻿
+﻿using solucionador.Interface;  // Correcto, para acceder a IPieza
+using solucionador.Dominio;    // Correcto, para acceder a Reina
+using Resolver8Piezas.Logica;            // Correcto, para acceder a Resolver8Piezas
 
-using System;
-using Tarea1;
+
+Tablero presentacion = new Tablero();
+presentacion.ImprimirCoordenadas();
 
 
-Tablero nuevoTablero = new Tablero();
-Console.WriteLine("Estas son las Coordenadas del tablero de ajedrez:");
-nuevoTablero.ImprimirCoordenadas();
+IPieza pieza = new Alfil();
+OchoPiezas solucionador = new OchoPiezas(pieza);
+solucionador.Resolver();
 
-Console.WriteLine("\n");
 
-Console.ForegroundColor = ConsoleColor.Magenta;
 
-Reina ochoReinas = new Reina();
-ochoReinas.Resolver();
+

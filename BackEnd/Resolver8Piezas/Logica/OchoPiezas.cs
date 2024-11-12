@@ -1,72 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using solucionador.Interface;
 
-namespace Tarea1
+namespace Resolver8Piezas.Logica
 {
-    internal class Reina
+    public class OchoPiezas
     {
         const int N = 8;
         private int solucionesEncontradas = 0;
         private Tablero tablero;
-        private List<int[]> soluciones = []; // Almacena todas las soluciones encontradas.
+        private List<int[]> soluciones = new List<int[]>(); // Almacena todas las soluciones encontradas.
+        private IPieza pieza; // Referencia a la pieza que se está utilizando.
 
-        public Reina()
+        public OchoPiezas(IPieza pieza)
         {
+            this.pieza = pieza;
             tablero = new Tablero();
         }
 
         public void Resolver()
         {
-            int[] posicionesReinas = new int[N];
-            ColocarReina(posicionesReinas, 0);
+            int[] posicionesPiezas = new int[N];
+            Console.WriteLine("Iniciando el proceso de resolución...");
+            ColocarPieza(posicionesPiezas, 0);
 
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            int sn = (N * N * N + N) / 2;
-            Console.WriteLine($"\nNúmero total de soluciones encontradas: {solucionesEncontradas} [ Š(8) = {sn} ]");
+            if (solucionesEncontradas > 0)
+            {
+                int sn = (N * N * N + N) / 2;
+                Console.WriteLine($"\nNúmero total de soluciones encontradas: {solucionesEncontradas} [ Š(8) = {sn} ]");
+            }
+            else
+            {
+                Console.WriteLine("\nNo se encontraron soluciones.");
+            }
             Console.ResetColor();
         }
 
-        // Metodo recursivo que coloca una reina en cada fila del tablero hasta encontrar una combinación válida.
-        private void ColocarReina(int[] posicionesReinas, int fila)
+        // Metodo recursivo que coloca una pieza en cada fila del tablero hasta encontrar una combinación válida.
+        private void ColocarPieza(int[] posicionesPiezas, int fila)
         {
-            if (fila == N)
+            if (fila == N) // Cuando hemos colocado una pieza en todas las filas, hemos encontrado una solución.
             {
-                solucionesEncontradas++;
-                if (!EsSimetrica(posicionesReinas))
+                if (!EsSimetrica(posicionesPiezas)) // Verifica si la solución es única.
                 {
-                    soluciones.Add((int[])posicionesReinas.Clone());
-                    ImprimirCoordenadas(posicionesReinas, true);
+                    solucionesEncontradas++;
+                    soluciones.Add((int[])posicionesPiezas.Clone());
+                    ImprimirCoordenadas(posicionesPiezas);
                 }
-                else
-                {
-                    ImprimirCoordenadas(posicionesReinas, false);
-                }
-                return;
+                return; // Detiene la recursión.
             }
 
+            // Intentamos colocar la pieza en cada columna de la fila.
             for (int columna = 0; columna < N; columna++)
             {
-                if (EsSeguro(posicionesReinas, fila, columna))
+                // Usamos el método EsSeguro para verificar si es seguro colocar la pieza.
+                if (pieza.EsSeguro(posicionesPiezas, fila, columna))
                 {
-                    posicionesReinas[fila] = columna;
-                    ColocarReina(posicionesReinas, fila + 1);
+                    posicionesPiezas[fila] = columna;
+                    ColocarPieza(posicionesPiezas, fila + 1); // Llamada recursiva para la siguiente fila.
+                    posicionesPiezas[fila] = -1; // Restablecemos la posición de la pieza en esta fila.
                 }
             }
         }
 
-        // Verifica si es seguro colocar una reina en una coordenada específica.
-        private bool EsSeguro(int[] posicionesReinas, int fila, int columna)
+
+        // Imprime las coordenadas de una solución.
+        private void ImprimirCoordenadas(int[] posicionesPiezas)
         {
-            for (int i = 0; i < fila; i++)
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"\nSolución {solucionesEncontradas}:");
+            for (int fila = 0; fila < N; fila++)
             {
-                int otraColumna = posicionesReinas[i];
-                if (otraColumna == columna || Math.Abs(otraColumna - columna) == Math.Abs(i - fila))
-                    return false;
+                string coordenada = tablero.ObtenerCoordenada(fila + 1, posicionesPiezas[fila] + 1);
+                Console.WriteLine($"Posición {fila + 1}: {coordenada}");
             }
-            return true;
+            Console.ResetColor();
         }
 
-        // Verifica si la solución ya está en la lista de soluciones únicas.
         private bool EsSimetrica(int[] solucion)
         {
             foreach (var solucionExistente in soluciones)
@@ -80,11 +89,14 @@ namespace Tarea1
                     SonIguales(ReflejarDiagonalPrincipal(solucion), solucionExistente) ||
                     SonIguales(ReflejarDiagonalSecundaria(solucion), solucionExistente))
                 {
-                    return true;
+                    Console.WriteLine("Solución duplicada encontrada, no se agrega.");
+                    return true; // Solución duplicada, detener aquí.
                 }
             }
-            return false;
+            return false; // Solución única, continúa.
         }
+
+
 
         // Función para comparar dos soluciones.
         private bool SonIguales(int[] solucion1, int[] solucion2)
@@ -145,11 +157,10 @@ namespace Tarea1
             int[] nuevaSolucion = new int[N];
             for (int i = 0; i < N; i++)
             {
-                nuevaSolucion[N - 1 - i] = solucion[i]; // Reflejo de izquierda a derecha
+                nuevaSolucion[N - 1 - i] = solucion[i];
             }
             return nuevaSolucion;
         }
-
 
         public int[] ReflejarDiagonalPrincipal(int[] solucion)
         {
@@ -169,28 +180,6 @@ namespace Tarea1
                 nuevaSolucion[N - 1 - solucion[i]] = N - 1 - i;
             }
             return nuevaSolucion;
-        }
-
-
-        // Imprime las coordenadas de una solución.
-        private void ImprimirCoordenadas(int[] posicionesReinas, bool esUnica)
-        {
-            if (esUnica)
-            {
-                Console.ForegroundColor = ConsoleColor.Green; // Resaltamos las soluciones únicas
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Magenta; // Soluciones simétricas
-            }
-
-            Console.WriteLine($"\nSolución {solucionesEncontradas}:");
-            for (int fila = 0; fila < N; fila++)
-            {
-                string coordenada = tablero.ObtenerCoordenada(fila, posicionesReinas[fila]);
-                Console.WriteLine($"Posición {fila + 1}: {coordenada}");
-            }
-            Console.ResetColor();
         }
     }
 }

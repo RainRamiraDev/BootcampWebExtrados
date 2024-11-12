@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Resolver8Piezas/1.0.0": {
+        "runtime": {
+          "Resolver8Piezas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Resolver8Piezas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -13,3 +13,7 @@ C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\Tarea2.pdb
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\Tarea2.genruntimeconfig.cache
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\ref\Tarea2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.Up2Date

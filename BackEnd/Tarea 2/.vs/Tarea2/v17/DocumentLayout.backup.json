@@ -3,16 +3,46 @@
   "WorkspaceRootPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\reina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|solutionrelative:reina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\logica\\ochopiezas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|solutionrelative:tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\alfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\interface\\ipieza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\peon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\reina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\logica\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\torre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\rey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\dominio\\caballo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\readme.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}",
+      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|solutionrelative:readme.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 2\\tarea2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B73B03F1-921C-4766-ADB7-5E31AF0DE40F}|Tarea2.csproj|solutionrelative:tarea2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11767607-9F09-4C01-A4C1-E1C4179CC20E}|..\\Resolver8Piezas\\Resolver8Piezas.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\resolver8piezas\\resolver8piezas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,8 +74,150 @@
         },
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Readme.md",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Readme.md",
+              "RelativeDocumentMoniker": "Readme.md",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Readme.md",
+              "RelativeToolTip": "Readme.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-11-12T01:23:12.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPieza.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Interface\\IPieza.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Interface\\IPieza.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Interface\\IPieza.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Interface\\IPieza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:51:04.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Torre.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Torre.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Torre.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Torre.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Torre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:50:58.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Rey.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Rey.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Rey.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Rey.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Rey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:50:52.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reina.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Reina.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Reina.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Reina.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Reina.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:50:45.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Peon.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Peon.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Peon.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Peon.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Peon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:50:36.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Caballo.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Caballo.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Caballo.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Caballo.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Caballo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:50:10.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Alfil.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Alfil.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Dominio\\Alfil.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Dominio\\Alfil.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Dominio\\Alfil.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:49:37.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Resolver8Piezas.csproj",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Resolver8Piezas.csproj",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Resolver8Piezas.csproj",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Resolver8Piezas.csproj",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Resolver8Piezas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-11T22:28:15.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OchoPiezas.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Logica\\OchoPiezas.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Logica\\OchoPiezas.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Logica\\OchoPiezas.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Logica\\OchoPiezas.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:06:45.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tablero.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Logica\\Tablero.cs",
+              "RelativeDocumentMoniker": "..\\Resolver8Piezas\\Logica\\Tablero.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Resolver8Piezas\\Logica\\Tablero.cs",
+              "RelativeToolTip": "..\\Resolver8Piezas\\Logica\\Tablero.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwB0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T21:57:44.404Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -54,35 +226,22 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T00:10:03.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Reina.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Reina.cs",
-              "RelativeDocumentMoniker": "Reina.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Reina.cs",
-              "RelativeToolTip": "Reina.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:34:55.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Tablero.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Tablero.cs",
-              "RelativeDocumentMoniker": "Tablero.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Tablero.cs",
-              "RelativeToolTip": "Tablero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:34:33.868Z",
+              "DocumentIndex": 11,
+              "Title": "Tarea2.csproj",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Tarea2.csproj",
+              "RelativeDocumentMoniker": "Tarea2.csproj",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 2\\Tarea2.csproj",
+              "RelativeToolTip": "Tarea2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-11T21:31:46.819Z",
               "EditorCaption": ""
             }
           ]

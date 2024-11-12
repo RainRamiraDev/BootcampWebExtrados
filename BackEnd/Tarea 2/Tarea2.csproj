@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Resolver8Piezas\Resolver8Piezas.csproj" />
+  </ItemGroup>
+
 </Project>

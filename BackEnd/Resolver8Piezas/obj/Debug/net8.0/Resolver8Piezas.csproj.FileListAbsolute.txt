@@ -1,0 +1,12 @@
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\bin\Debug\net8.0\Resolver8Piezas.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\bin\Debug\net8.0\Resolver8Piezas.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\bin\Debug\net8.0\Resolver8Piezas.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\refint\Resolver8Piezas.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\Resolver8Piezas.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Resolver8Piezas\obj\Debug\net8.0\ref\Resolver8Piezas.dll
