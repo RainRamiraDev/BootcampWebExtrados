@@ -7,8 +7,8 @@ namespace Resolver8Piezas.Logica
         const int N = 8;
         private int solucionesEncontradas = 0;
         private Tablero tablero;
-        private List<int[]> soluciones = new List<int[]>(); // Almacena todas las soluciones encontradas.
-        private IPieza pieza; // Referencia a la pieza que se está utilizando.
+        private List<int[]> soluciones = new List<int[]>(); 
+        private IPieza pieza; 
 
         public OchoPiezas(IPieza pieza)
         {
@@ -38,15 +38,15 @@ namespace Resolver8Piezas.Logica
         // Metodo recursivo que coloca una pieza en cada fila del tablero hasta encontrar una combinación válida.
         private void ColocarPieza(int[] posicionesPiezas, int fila)
         {
-            if (fila == N) // Cuando hemos colocado una pieza en todas las filas, hemos encontrado una solución.
+            if (fila == N)
             {
-                if (!EsSimetrica(posicionesPiezas)) // Verifica si la solución es única.
+                if (!EsSimetrica(posicionesPiezas))
                 {
                     solucionesEncontradas++;
                     soluciones.Add((int[])posicionesPiezas.Clone());
                     ImprimirCoordenadas(posicionesPiezas);
                 }
-                return; // Detiene la recursión.
+                return; 
             }
 
             // Intentamos colocar la pieza en cada columna de la fila.
@@ -56,8 +56,8 @@ namespace Resolver8Piezas.Logica
                 if (pieza.EsSeguro(posicionesPiezas, fila, columna))
                 {
                     posicionesPiezas[fila] = columna;
-                    ColocarPieza(posicionesPiezas, fila + 1); // Llamada recursiva para la siguiente fila.
-                    posicionesPiezas[fila] = -1; // Restablecemos la posición de la pieza en esta fila.
+                    ColocarPieza(posicionesPiezas, fila + 1);
+                    posicionesPiezas[fila] = -1; 
                 }
             }
         }
