@@ -35,7 +35,6 @@ namespace Resolver8Piezas.Logica
                 throw new ArgumentOutOfRangeException("Fila y columna deben estar entre 1 y 8.");
             }
 
-            // Ajuste de fila y columna al rango 0-7 para acceder a la lista
             int indice = (fila - 1) * 8 + (columna - 1);
             return Coordenadas[indice];
         }
