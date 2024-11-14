@@ -1,6 +1,6 @@
-﻿using solucionador.Interface;  // Correcto, para acceder a IPieza
-using solucionador.Dominio;    // Correcto, para acceder a Reina
-using Resolver8Piezas.Logica;            // Correcto, para acceder a Resolver8Piezas
+﻿using solucionador.Interface;  
+using solucionador.Dominio;   
+using Resolver8Piezas.Logica; 
 
 
 Tablero presentacion = new Tablero();
