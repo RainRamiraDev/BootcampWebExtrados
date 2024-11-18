@@ -17,3 +17,22 @@ C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.dll
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.pdb
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.Up2Date
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Tarea2.exe
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Tarea2.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Tarea2.runtimeconfig.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Tarea2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Tarea2.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\bin\Debug\net8.0\Resolver8Piezas.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.csproj.Up2Date
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\refint\Tarea2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\Tarea2.genruntimeconfig.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 2\Tarea 2\obj\Debug\net8.0\ref\Tarea2.dll

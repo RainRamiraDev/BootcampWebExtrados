@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Resolver8Piezas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0a8443c4149ed025e4ddf8bf55fee53dedc3a9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62114a334eb8abace0d1264ba2e9c1b544581992")]
 [assembly: System.Reflection.AssemblyProductAttribute("Resolver8Piezas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Resolver8Piezas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

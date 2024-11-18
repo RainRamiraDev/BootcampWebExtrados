@@ -1,13 +1,11 @@
-﻿## “El reto de las 8 piezas”
+﻿## Ejercicio:
 
-Siguiendo la linea del ejercicio anterior:
+1) Crear una nueva rama para el problema de las piezas visto anteriormente
 
-* Generar un método “Resolver8Piezas(IPieza pieza)” o “Resolver8Piezas(Pieza pieza)” que pueda colocar 8 de la pieza indicada en un tablero de ajedrez sin que ninguna pieza pueda comerse a ninguna otra.
+2) Crear una pieza para la cual el problema no tenga solución
 
-* Generar múltiples clases para piezas de ajedrez, que implementen la interfaz “IPieza” o que hereden de “Pieza”
+3) Crear un objeto-excepción “SinSolucionException”
 
-* El método “Resolver8Piezas” debe poder, sin ningún cambio a su codigo, agarrar cualquier pieza ya existente o nuevamente creada, ya sea una pieza del ajedrez real o una pieza ficticia, y resolver el problema o indicar que para esta pieza, el problema no tiene solución.
+4) Hacer throw de este objeto cuando no se encuentre la solución al problema de las piezas
 
-* Este método debe estar en una clase que es parte de una biblioteca de clases
-
-* El proyecto compilado (el que se ejecuta, el que tiene el program.cs) debe llamar a la clase de la biblioteca y utilizarla
+5) Manejar el error para que, en caso de encontrar esta excepción, se imprima un mensaje y el stacktrace

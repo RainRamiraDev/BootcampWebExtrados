@@ -1,4 +1,5 @@
-﻿using solucionador.Interface;
+﻿using Resolver8Piezas.Excepcion;
+using solucionador.Interface;
 
 namespace Resolver8Piezas.Logica
 {
@@ -18,22 +19,34 @@ namespace Resolver8Piezas.Logica
 
         public void Resolver()
         {
-            int[] posicionesPiezas = new int[N];
-            Console.WriteLine("Iniciando el proceso de resolución...");
-            ColocarPieza(posicionesPiezas, 0);
+            try
+            {
+                int[] posicionesPiezas = new int[N];
+                Console.WriteLine("Iniciando el proceso de resolución...");
+                ColocarPieza(posicionesPiezas, 0);
 
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            if (solucionesEncontradas > 0)
-            {
-                int sn = (N * N * N + N) / 2;
-                Console.WriteLine($"\nNúmero total de soluciones encontradas: {solucionesEncontradas} [ Š(8) = {sn} ]");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                if (solucionesEncontradas > 0)
+                {
+                    int sn = (N * N * N + N) / 2;
+                    Console.WriteLine($"\nNúmero total de soluciones encontradas: {solucionesEncontradas} [ Š(8) = {sn} ]");
+                }
+                else
+                {
+                    throw new SinSolucionExcepcion();
+                }
             }
-            else
+            catch (SinSolucionExcepcion ex)
             {
-                Console.WriteLine("\nNo se encontraron soluciones.");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"\nError: {ex.Message}");
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine($"Error: {ex.StackTrace}");
+                Console.WriteLine("--------------------------------");
+                Console.ResetColor();
             }
-            Console.ResetColor();
         }
+
 
         // Metodo recursivo que coloca una pieza en cada fila del tablero hasta encontrar una combinación válida.
         private void ColocarPieza(int[] posicionesPiezas, int fila)
