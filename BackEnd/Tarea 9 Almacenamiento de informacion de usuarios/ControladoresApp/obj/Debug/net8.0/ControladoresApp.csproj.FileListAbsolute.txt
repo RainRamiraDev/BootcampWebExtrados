@@ -1,0 +1,142 @@
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\appsettings.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.staticwebassets.endpoints.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.exe
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.runtimeconfig.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ControladoresApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\scopedcss\bundle\ControladoresApp.styles.css
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.ControladoresApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.ControladoresApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\Controla.D335061E.Up2Date
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\refint\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ControladoresApp.genruntimeconfig.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\obj\Debug\net8.0\ref\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Dapper.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\MySql.Data.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Text.Json.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\ZstdSharp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\FluentValidation.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\ControladoresApp\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\appsettings.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.staticwebassets.endpoints.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.exe
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.runtimeconfig.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ControladoresApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Dapper.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\FluentValidation.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Konscious.Security.Cryptography.Argon2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Konscious.Security.Cryptography.Blake2.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\MySql.Data.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Text.Json.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\ZstdSharp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\scopedcss\bundle\ControladoresApp.styles.css
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.ControladoresApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.ControladoresApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ControladoresApp.props
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\Controla.D335061E.Up2Date
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\refint\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.genruntimeconfig.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ref\ControladoresApp.dll

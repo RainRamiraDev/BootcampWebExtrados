@@ -1,0 +1,26 @@
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\bin\Debug\net8.0\UserDaoLib.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\bin\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\bin\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\refint\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 7 Controladores\UserDao\obj\Debug\net8.0\ref\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\bin\Debug\net8.0\UserDaoLib.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\bin\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\bin\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\refint\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\UserDao\obj\Debug\net8.0\ref\UserDaoLib.dll
