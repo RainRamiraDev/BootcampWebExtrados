@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserDaoLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a37500c144df072116c6047597f7ed37af69f6d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbcd4c0ba9a710ffd99cb3657e756da1131645a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserDaoLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserDaoLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
