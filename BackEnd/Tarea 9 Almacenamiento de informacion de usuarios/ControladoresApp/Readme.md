@@ -1,14 +1,7 @@
-### Generar una API WEB REST de ASP.NET CORE que pueda guardar, obtener o actualizar usuarios.
--  la API debe de poder buscar un usuario por email.
 
-- Cada usuario tiene un mail,un nombre, edad.
-- Los usuarios se deben guardar en una base de datos.
-- La API debe controlar que la edad > 14,
-- La API debe controlar que el email sea de GMAIL (usar string.Contains())
-- Los DAO deben ser todos singletons y deben estar en su propia biblioteca de clases.
+## Ejercicio:
 
-//TODO: 
-//-Agregar el filtro por mail
-//-Agregar la condicion de edad
-//-Agregar los Singleton
-//Corregir el programa en general
+-modificar el ejercicio de la clase anterior, para que al guardar un usuario, la contraseña del mismo quede hasheada en la base de datos.
+	-para esto, buscar una librería para hashear la contraseña
+	-asegurarse que la librería hashee la contraseña de acuerdo con las recomendaciones de la OWASP
+-al llamar al endpoint de obtener usuario, se debe pedir la contraseña y se debe verificar que esta sea correcta.

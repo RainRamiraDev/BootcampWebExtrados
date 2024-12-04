@@ -140,3 +140,4 @@ C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenami
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.pdb
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ControladoresApp.genruntimeconfig.cache
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\obj\Debug\net8.0\ref\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 9 Almacenamiento de informacion de usuarios\ControladoresApp\bin\Debug\net8.0\BCrypt.Net.dll

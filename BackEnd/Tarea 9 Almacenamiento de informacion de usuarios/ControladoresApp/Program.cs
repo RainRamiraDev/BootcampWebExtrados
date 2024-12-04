@@ -5,6 +5,7 @@ using UserDaoLib.Services;
 using UserDaoLib.Dto.Validations;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using UserDaoLib.Daos.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,8 @@ builder.Services.AddSingleton<IUserDao>(provider =>
 builder.Services.AddValidatorsFromAssemblyContaining<UserDtoValidations>();
 
 builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddScoped<PasswordHasher>();
 
 
 

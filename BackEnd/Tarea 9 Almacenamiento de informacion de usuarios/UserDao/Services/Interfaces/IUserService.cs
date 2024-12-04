@@ -1,6 +1,7 @@
 ﻿
 
 using UserDaoLib.Dto;
+using UserDaoLib.Models;
 
 namespace UserDaoLib.Services.Interfaces
 {
@@ -12,5 +13,7 @@ namespace UserDaoLib.Services.Interfaces
         Task<IEnumerable<UserDbReadDto>> GetAllUsersAsync();
         Task<bool> UpdateUserAsync(int id,UserDbAlterDto userDto);
         Task<bool> DeleteUserAsync(int id);
+
+        Task<UserModel> LogInAsync(string nombre, string contrasenia);
     }
 }

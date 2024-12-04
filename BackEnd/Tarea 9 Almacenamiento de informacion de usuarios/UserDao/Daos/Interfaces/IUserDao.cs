@@ -16,5 +16,7 @@ namespace UserDaoLib.Daos.Interfaces
         Task<IEnumerable<UserModel>> GetAllAsync();
         Task<bool> UpdateAsync(UserModel user);
         Task<bool> DeleteAsync(int id);
+
+        Task<UserModel> LogInAsync(string nombre);
     }
 }

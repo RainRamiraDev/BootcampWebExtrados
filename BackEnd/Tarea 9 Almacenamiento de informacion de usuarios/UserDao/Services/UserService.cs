@@ -11,17 +11,36 @@ namespace UserDaoLib.Services
     public class UserService : IUserService
     {
         private readonly IUserDao _userDao;
+        private PasswordHasher _passwordHasher;
 
-        public UserService(IUserDao userDao)
+        public UserService(IUserDao userDao, PasswordHasher passwordHasher)
         {
             _userDao = userDao;
+            _passwordHasher = passwordHasher;
+        }
+
+        public async Task<UserModel> LogInAsync(string nombre, string contrasenia)
+        {
+            var user = await _userDao.LogInAsync(nombre);
+            if (user == null)
+            {
+                return null;
+            }
+
+            bool isPasswordValid = _passwordHasher.VerifyPassword(contrasenia, user.Contrasenia);
+            if (!isPasswordValid)
+            {
+                return null;
+            }
+
+            return user;
         }
 
 
         public async Task<int> CreateUserAsync(UserDbAlterDto userDto)
         {
             // Hashea la contraseña antes de guardarla
-            string hashedPassword = PasswordHasher.HashPassword(userDto.Contrasenia);
+            string hashedPassword = _passwordHasher.HashPassword(userDto.Contrasenia);
 
             var userModel = new UserModel
             {
@@ -64,7 +83,7 @@ namespace UserDaoLib.Services
         public async Task<bool> UpdateUserAsync(int id, UserDbAlterDto userDto)
         {
             // Hashea la contraseña si ha sido cambiada
-            string hashedPassword = PasswordHasher.HashPassword(userDto.Contrasenia);
+            string hashedPassword = _passwordHasher.HashPassword(userDto.Contrasenia);
 
             var userModel = new UserModel
             {
@@ -95,17 +114,6 @@ namespace UserDaoLib.Services
                 Nombre = userModel.Nombre,
                 Email = userModel.Email
             };
-        }
-
-
-        public async Task<bool> VerifyUserPasswordAsync(string email, string password)
-        {
-            
-            var userModel = await _userDao.GetByEmailAsync(email);
-            if (userModel == null) return false;
-
-            
-            return PasswordHasher.VerifyPassword(password, userModel.Contrasenia);
         }
     }
 }

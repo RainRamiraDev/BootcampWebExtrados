@@ -62,6 +62,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "contrasenia",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {

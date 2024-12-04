@@ -63,7 +63,7 @@ namespace ControladoresApp.Controllers
         }
 
         [HttpGet("GetById/{id}")]
-        public async Task<IActionResult> GetUserById(int id)
+        public async Task<IActionResult> GetUserById(int id, [FromQuery] string contrasenia)
         {
             try
             {
@@ -74,6 +74,16 @@ namespace ControladoresApp.Controllers
                     var response = ApiResponse<UserDbReadDto>.ErrorResponse(errors, "GetUserById: No se pudo encontrar al usuario con ID: " + id);
                     return NotFound(response);
                 }
+
+                // Verificamos si la contraseña es válida
+                var userModel = await _userService.LogInAsync(user.Nombre, contrasenia);
+                if (userModel == null)
+                {
+                    var errors = new List<string> { "Contraseña incorrecta." };
+                    var response = ApiResponse<UserDbReadDto>.ErrorResponse(errors, "GetUserById: La contraseña proporcionada es incorrecta.");
+                    return Unauthorized(response); // Responde con un código 401 si la contraseña es incorrecta
+                }
+
                 var successResponse = ApiResponse<UserDbReadDto>.SuccessResponse("Usuario encontrado.", user);
                 return Ok(successResponse);
             }
@@ -85,6 +95,7 @@ namespace ControladoresApp.Controllers
                 return BadRequest(response);
             }
         }
+
 
         [HttpGet("GetByEmail/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)

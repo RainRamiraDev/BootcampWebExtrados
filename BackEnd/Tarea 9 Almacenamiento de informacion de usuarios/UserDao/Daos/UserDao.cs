@@ -20,29 +20,27 @@ namespace UserDaoLib.Daos
         private readonly string QueryDelete = "DELETE FROM Users WHERE Id = @id";
         private readonly string QueryGetByEmail = "SELECT * FROM Users WHERE email = @email";
 
+        private readonly string QueryLogin = "SELECT * FROM Users WHERE Nombre = @Nombre";
+
+        public async Task<UserModel> LogInAsync(string nombre)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var user = await connection.QueryFirstOrDefaultAsync<UserModel>(QueryLogin, new { nombre });
+                return user;
+            }
+        }
+
         public UserDao(string connectionString)
         {
             _connectionString = connectionString;
         }
 
-        private async Task<bool> EmailExistsAsync(string email)
-        {
-            using (var connection = new MySqlConnection(_connectionString))
-            {
-                await connection.OpenAsync();
-                var existingUser = await connection.QueryFirstOrDefaultAsync<UserModel>(QueryGetByEmail, new { email });
-                return existingUser != null;
-            }
-        }
+
 
         public async Task<int> CreateAsync(UserModel user)
         {
-            // Validar que no exista un usuario con el mismo email
-            if (await EmailExistsAsync(user.Email))
-            {
-                throw new Exception("Ya existe un usuario con el mismo email.");
-            }
-
             using (var connection = new MySqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
