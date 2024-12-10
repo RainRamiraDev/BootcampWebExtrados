@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\services\\prestamoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\models\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\dto\\prestamo\\prestamodbalterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\daos\\prestamodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 132,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrestamoService.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Services\\PrestamoService.cs",
+              "RelativeDocumentMoniker": "..\\UserDao\\Services\\PrestamoService.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Services\\PrestamoService.cs",
+              "RelativeToolTip": "..\\UserDao\\Services\\PrestamoService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T07:06:36.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrestamoModel.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Models\\PrestamoModel.cs",
+              "RelativeDocumentMoniker": "..\\UserDao\\Models\\PrestamoModel.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Models\\PrestamoModel.cs",
+              "RelativeToolTip": "..\\UserDao\\Models\\PrestamoModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T07:06:20.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrestamoDbAlterDto.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
+              "RelativeDocumentMoniker": "..\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
+              "RelativeToolTip": "..\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T07:05:49.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrestamoDao.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Daos\\PrestamoDao.cs",
+              "RelativeDocumentMoniker": "..\\UserDao\\Daos\\PrestamoDao.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Daos\\PrestamoDao.cs",
+              "RelativeToolTip": "..\\UserDao\\Daos\\PrestamoDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T07:05:21.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
