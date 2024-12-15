@@ -1,0 +1,24 @@
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\bin\Debug\net8.0\Configuration.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\bin\Debug\net8.0\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\bin\Debug\net8.0\Configuration.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\refint\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\Configuration.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 11 CORS y OPTIONS\Configuration\obj\Debug\net8.0\ref\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\bin\Debug\net8.0\Configuration.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\bin\Debug\net8.0\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\bin\Debug\net8.0\Configuration.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\refint\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\Configuration.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 12 V2\Configuration\obj\Debug\net8.0\ref\Configuration.dll

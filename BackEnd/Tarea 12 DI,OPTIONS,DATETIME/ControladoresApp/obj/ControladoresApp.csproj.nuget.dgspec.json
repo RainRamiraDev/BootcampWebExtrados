@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\ControladoresApp.csproj": {}
+    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\ControladoresApp\\ControladoresApp.csproj": {}
   },
   "projects": {
-    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\Configuration.csproj": {
+    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\Configuration.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\Configuration.csproj",
         "projectName": "Configuration",
-        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\Configuration.csproj",
+        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\Configuration.csproj",
         "packagesPath": "C:\\Users\\r4yn1\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\obj\\",
+        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\ControladoresApp.csproj": {
+    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\ControladoresApp\\ControladoresApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\ControladoresApp.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\ControladoresApp\\ControladoresApp.csproj",
         "projectName": "ControladoresApp",
-        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\ControladoresApp.csproj",
+        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\ControladoresApp\\ControladoresApp.csproj",
         "packagesPath": "C:\\Users\\r4yn1\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\obj\\",
+        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\ControladoresApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\Configuration.csproj": {
-                "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\Configuration\\Configuration.csproj"
+              "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\Configuration\\Configuration.csproj"
               },
-              "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\UserDaoLib.csproj": {
-                "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\UserDaoLib.csproj"
+              "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\UserDaoLib.csproj": {
+                "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\UserDaoLib.csproj"
               }
             }
           }
@@ -182,14 +182,14 @@
         }
       }
     },
-    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\UserDaoLib.csproj": {
+    "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\UserDaoLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\UserDaoLib.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\UserDaoLib.csproj",
         "projectName": "UserDaoLib",
-        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\UserDaoLib.csproj",
+        "projectPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\UserDaoLib.csproj",
         "packagesPath": "C:\\Users\\r4yn1\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\obj\\",
+        "outputPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 DI,OPTIONS,DATETIME\\UserDao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
