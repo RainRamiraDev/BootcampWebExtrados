@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\ControladoresApp\\",
+  "WorkspaceRootPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\services\\prestamoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{665C1347-713E-4603-BB12-52C021614718}|..\\RefreshTokenApp\\RefreshTokenApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\refreshtokenapp\\service\\refreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\models\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{665C1347-713E-4603-BB12-52C021614718}|..\\RefreshTokenApp\\RefreshTokenApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\refreshtokenapp\\dao\\refreshtokendao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\dto\\prestamo\\prestamodbalterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{665C1347-713E-4603-BB12-52C021614718}|..\\RefreshTokenApp\\RefreshTokenApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\refreshtokenapp\\dao\\interface\\irefreshtokendao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92386F1F-1840-4B45-9C4C-BA074A409C5C}|..\\UserDao\\UserDaoLib.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 12 v2\\userdao\\daos\\prestamodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{665C1347-713E-4603-BB12-52C021614718}|..\\RefreshTokenApp\\RefreshTokenApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\refreshtokenapp\\service\\interface\\irefreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,53 +27,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PrestamoService.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Services\\PrestamoService.cs",
-              "RelativeDocumentMoniker": "..\\UserDao\\Services\\PrestamoService.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Services\\PrestamoService.cs",
-              "RelativeToolTip": "..\\UserDao\\Services\\PrestamoService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Title": "RefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\RefreshTokenService.cs",
+              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Service\\RefreshTokenService.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\RefreshTokenService.cs",
+              "RelativeToolTip": "..\\RefreshTokenApp\\Service\\RefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAtwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:06:36.059Z",
+              "WhenOpened": "2024-12-15T05:18:44.294Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PrestamoModel.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Models\\PrestamoModel.cs",
-              "RelativeDocumentMoniker": "..\\UserDao\\Models\\PrestamoModel.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Models\\PrestamoModel.cs",
-              "RelativeToolTip": "..\\UserDao\\Models\\PrestamoModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Title": "RefreshTokenDao.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Dao\\RefreshTokenDao.cs",
+              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Dao\\RefreshTokenDao.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Dao\\RefreshTokenDao.cs",
+              "RelativeToolTip": "..\\RefreshTokenApp\\Dao\\RefreshTokenDao.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwD0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:06:20.828Z",
+              "WhenOpened": "2024-12-15T05:38:00.502Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PrestamoDbAlterDto.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
-              "RelativeDocumentMoniker": "..\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
-              "RelativeToolTip": "..\\UserDao\\Dto\\Prestamo\\PrestamoDbAlterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "IRefreshTokenDao.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Dao\\Interface\\IRefreshTokenDao.cs",
+              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Dao\\Interface\\IRefreshTokenDao.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Dao\\Interface\\IRefreshTokenDao.cs",
+              "RelativeToolTip": "..\\RefreshTokenApp\\Dao\\Interface\\IRefreshTokenDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:05:49.964Z",
+              "WhenOpened": "2024-12-15T05:37:41.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PrestamoDao.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Daos\\PrestamoDao.cs",
-              "RelativeDocumentMoniker": "..\\UserDao\\Daos\\PrestamoDao.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 12 V2\\UserDao\\Daos\\PrestamoDao.cs",
-              "RelativeToolTip": "..\\UserDao\\Daos\\PrestamoDao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Title": "IRefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "RelativeToolTip": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:05:21.126Z",
+              "WhenOpened": "2024-12-15T05:33:42.308Z",
               "EditorCaption": ""
             },
             {

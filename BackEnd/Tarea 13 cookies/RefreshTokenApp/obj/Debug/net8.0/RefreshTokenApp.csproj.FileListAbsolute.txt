@@ -1,0 +1,6 @@
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.csproj.AssemblyReference.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.AssemblyInfoInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.AssemblyInfo.cs
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.csproj.CoreCompileInputs.cache
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.sourcelink.json

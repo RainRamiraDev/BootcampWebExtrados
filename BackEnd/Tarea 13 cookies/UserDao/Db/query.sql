@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS tarea9
-USE tarea9;
+CREATE DATABASE IF NOT EXISTS tarea13
+USE tarea13;
 
 -- Tabla libros
 CREATE TABLE libros (
@@ -27,6 +27,16 @@ CREATE TABLE prestamos (
   CONSTRAINT fk_prestamo_libro FOREIGN KEY (isbn) REFERENCES libros (isbn),
   CONSTRAINT fk_prestamo_users FOREIGN KEY (id_usuario) REFERENCES users (Id)
 );
+
+CREATE TABLE refresh_tokens (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  token VARCHAR(255) NOT NULL UNIQUE,
+  expiry_date DATETIME NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_refresh_token_user FOREIGN KEY (user_id) REFERENCES users (Id) ON DELETE CASCADE
+);
+
 
 
 INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456789, 'El Señor de los Anillos', 'J.R.R. Tolkien', 'Fantasía');

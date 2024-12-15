@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDaoLib", "..\UserDao\Us
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "..\Configuration\Configuration.csproj", "{83A3EE5D-0E71-4706-9D74-859D81CB9A26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefreshTokenApp", "..\RefreshTokenApp\RefreshTokenApp.csproj", "{665C1347-713E-4603-BB12-52C021614718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{83A3EE5D-0E71-4706-9D74-859D81CB9A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83A3EE5D-0E71-4706-9D74-859D81CB9A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83A3EE5D-0E71-4706-9D74-859D81CB9A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665C1347-713E-4603-BB12-52C021614718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665C1347-713E-4603-BB12-52C021614718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665C1347-713E-4603-BB12-52C021614718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665C1347-713E-4603-BB12-52C021614718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
