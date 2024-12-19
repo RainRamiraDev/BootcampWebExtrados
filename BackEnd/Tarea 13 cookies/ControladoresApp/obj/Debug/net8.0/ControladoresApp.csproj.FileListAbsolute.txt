@@ -470,3 +470,5 @@ C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\C
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\ControladoresApp\obj\Debug\net8.0\ControladoresApp.pdb
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\ControladoresApp\obj\Debug\net8.0\ControladoresApp.genruntimeconfig.cache
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\ControladoresApp\obj\Debug\net8.0\ref\ControladoresApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\ControladoresApp\bin\Debug\net8.0\RefreshTokenApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\ControladoresApp\bin\Debug\net8.0\RefreshTokenApp.pdb

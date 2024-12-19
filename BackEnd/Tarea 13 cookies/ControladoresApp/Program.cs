@@ -10,19 +10,14 @@ using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Configuration;
+using RefreshTokenApp.Service.Interface;
+using Microsoft.AspNetCore.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
-
-//builder.Services.AddSingleton<IUserDao>(provider =>
-//{
-//    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//    return new UserDao(connectionString);
-//});
-
 
 //------------------ DAO ----------------------------------
 
@@ -31,23 +26,23 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 builder.Services.AddSingleton<IUserDao>(provider =>
 {
-    //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     return new UserDao(connectionString);
 });
 
-
 builder.Services.AddSingleton<ILibroDao>(provider =>
 {
-    //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     return new LibroDao(connectionString);
 });
 
 builder.Services.AddSingleton<IPrestamoDao>(provider =>
 {
-    //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     return new PrestamoDao(connectionString);
 });
 
+builder.Services.AddSingleton<IRefreshTokenDao>(provider =>
+{
+    return new RefreshTokenDao(connectionString);
+});
 
 //------------------ SERVICE ----------------------------------
 
@@ -58,8 +53,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddScoped<ILibroService, LibroService>();
 
-
-
+builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 
 
 //--------
@@ -79,7 +73,6 @@ builder.Services.AddValidatorsFromAssemblyContaining<UserDtoValidations>();
 builder.Services.AddValidatorsFromAssemblyContaining<LibroDtoValidations>();
 
 builder.Services.AddValidatorsFromAssemblyContaining<PrestamoDtoValidations>();
-
 
 
 
@@ -112,7 +105,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 
 
-//builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

@@ -13,6 +13,7 @@ using Org.BouncyCastle.Math;
 using System.Net;
 using Configuration;
 using Microsoft.Extensions.Options;
+using RefreshTokenApp.Service.Interface;
 
 namespace ControladoresApp.Controllers
 {
@@ -21,11 +22,13 @@ namespace ControladoresApp.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IRefreshTokenService _refreshTokenService;
         private readonly KeysConfiguration _keysConfiguration;
 
-        public UserController(IUserService userService, IOptions<KeysConfiguration> keys)
+        public UserController(IUserService userService, IOptions<KeysConfiguration> keys, IRefreshTokenService refreshToken)
         {
             _userService = userService;
+            _refreshTokenService = refreshToken;
             _keysConfiguration = keys.Value;
         }
 
@@ -93,43 +96,103 @@ namespace ControladoresApp.Controllers
 
                 if (user == null)
                 {
-                    var errors = new List<string> { "Usuario no encontrado o contraseña incorrecta." };
-                    var response = ApiResponse<UserDbReadDto>.ErrorResponse(errors, "LogIn: No se pudo encontrar al usuario con Nombre: " + nombre);
-                    return NotFound(response);
+                    return NotFound(ApiResponse<UserDbReadDto>.ErrorResponse(
+                        new List<string> { "Usuario no encontrado o contraseña incorrecta." },
+                        $"LogIn: No se pudo encontrar al usuario con Nombre: {nombre}"
+                    ));
                 }
 
-                var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_keysConfiguration.Key));
-                var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+                var accessToken = _refreshTokenService.GenerateAccessToken(user.Id, user.Nombre, user.Email);
 
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, user.Nombre),
-                    new Claim(ClaimTypes.Email, user.Email),
-                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                Guid refreshToken = Guid.NewGuid();
+                DateTime expirationDate = DateTime.UtcNow.AddDays(7);
 
+                await _refreshTokenService.SaveRefreshTokenAsync(refreshToken, user.Id, expirationDate);
 
-                    new Claim(ClaimTypes.Role, "usuario") 
+                Response.Cookies.Append("RefreshToken", refreshToken.ToString(),
+                    new CookieOptions
+                    {
+                        HttpOnly = true,
+                        Secure = true,
+                        SameSite = SameSiteMode.Strict,
+                        Expires = expirationDate
+                    });
 
-                };
-
-                var token = new JwtSecurityToken(
-                    issuer: _keysConfiguration.Issuer,
-                    audience: _keysConfiguration.Audience,
-                    claims: claims,
-                    expires: DateTime.Now.AddMinutes(120),
-                    signingCredentials: credentials);
-
-                var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-
-                return Ok(new { Token = tokenString });
+                return Ok(new { AccessToken = accessToken });
             }
             catch (Exception ex)
             {
-                var errors = new List<string> { "Ocurrió un error al intentar iniciar sesión." };
-                var stackTrace = ex.StackTrace;
-                var response = ApiResponse<UserDbReadDto>.ErrorResponse(errors, stackTrace);
-                return BadRequest(response);
+                return BadRequest(ApiResponse<UserDbReadDto>.ErrorResponse(
+                    new List<string> { "Ocurrió un error al intentar iniciar sesión." },
+                    ex.StackTrace
+                ));
             }
         }
+
+
+
+        [HttpPost("RefreshToken")]
+        public async Task<IActionResult> RefreshToken([FromBody] Guid oldRefreshToken)
+        {
+            try
+            {
+                var refreshTokenFromCookie = Request.Cookies["RefreshToken"];
+
+                if (string.IsNullOrEmpty(refreshTokenFromCookie))
+                {
+                    return Unauthorized(new { Message = "No se encontró el refresh token." });
+                }
+
+                var (newAccessToken, newRefreshToken) = await _refreshTokenService.RefreshAccessTokenAsync(Guid.Parse(refreshTokenFromCookie));
+
+                Response.Cookies.Append("RefreshToken", newRefreshToken.ToString(),
+                    new CookieOptions
+                    {
+                        HttpOnly = true,
+                        Secure = true, 
+                        SameSite = SameSiteMode.Strict,
+                        Expires = DateTime.UtcNow.AddDays(7) 
+                    });
+
+                return Ok(new { AccessToken = newAccessToken, RefreshToken = newRefreshToken });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = "Ocurrió un error al intentar renovar el token.", Details = ex.Message });
+            }
+        }
+
+        [HttpPost("Logout")]
+        public async Task<IActionResult> Logout([FromBody] Guid refreshToken)
+        {
+            try
+            {
+                bool result = await _refreshTokenService.LogoutAsync(refreshToken);
+
+                if (!result)
+                    return NotFound(new { Message = "El token no fue encontrado o ya se eliminó." });
+ 
+                Response.Cookies.Append("RefreshToken", "", new CookieOptions
+                {
+                    Expires = DateTime.Now, 
+                    HttpOnly = true,
+                    Secure = true, 
+                    SameSite = SameSiteMode.Strict 
+                });
+
+                return Ok(new { Message = "Sesión cerrada exitosamente." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = "Ocurrió un error al intentar cerrar sesión.", Details = ex.Message });
+            }
+        }
+
+
+
     }
 }

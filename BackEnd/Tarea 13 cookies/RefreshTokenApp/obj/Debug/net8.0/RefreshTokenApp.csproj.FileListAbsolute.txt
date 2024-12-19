@@ -4,3 +4,15 @@ C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\R
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.AssemblyInfo.cs
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.csproj.CoreCompileInputs.cache
 C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.sourcelink.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\RefreshTokenApp.deps.json
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\RefreshTokenApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\RefreshTokenApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\refint\RefreshTokenApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshTokenApp.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\ref\RefreshTokenApp.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\Configuration.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\UserDaoLib.dll
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\Configuration.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\bin\Debug\net8.0\UserDaoLib.pdb
+C:\Repositorios\Bootcamp Extrados\BootcampWebExtrados\BackEnd\Tarea 13 cookies\RefreshTokenApp\obj\Debug\net8.0\RefreshT.963D0DE4.Up2Date

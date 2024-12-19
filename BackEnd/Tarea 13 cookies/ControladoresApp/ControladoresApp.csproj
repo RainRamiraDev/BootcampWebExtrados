@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Configuration\Configuration.csproj" />
+    <ProjectReference Include="..\RefreshTokenApp\RefreshTokenApp.csproj" />
     <ProjectReference Include="..\UserDao\UserDaoLib.csproj" />
   </ItemGroup>
 

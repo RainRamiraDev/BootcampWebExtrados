@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControladoresApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbe4439a877597d68889799aea671ee84faf8e02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+029f93e77b309e8ffc93ac541f2ef7d75c7b1951")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControladoresApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControladoresApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
