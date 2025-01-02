@@ -1,0 +1,52 @@
+[
+  {
+    "ContainingType": "GameApp.Controllers.Card.CardController",
+    "Method": "GetAllCards",
+    "RelativePath": "api/Card/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GameApp.Controllers.User.UserController",
+    "Method": "GetAllAdmins",
+    "RelativePath": "api/User/GetAllAdmins",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GameApp.Controllers.User.UserController",
+    "Method": "GetAllJudges",
+    "RelativePath": "api/User/GetAllJudges",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GameApp.Controllers.User.UserController",
+    "Method": "GetAllOrganizers",
+    "RelativePath": "api/User/GetAllOrganizers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GameApp.Controllers.User.UserController",
+    "Method": "GetAllPlayers",
+    "RelativePath": "api/User/GetAllPlayers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

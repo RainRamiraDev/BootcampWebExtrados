@@ -1,0 +1,425 @@
+﻿-- 1. Crear tablas sin dependencias
+CREATE TABLE T_Series (
+    id_series INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    release_date DATE NOT NULL
+);
+
+CREATE TABLE T_Card (
+    id_card INT AUTO_INCREMENT PRIMARY KEY,
+    illustration VARCHAR(255),
+    attack INT NOT NULL,
+    defense INT NOT NULL
+);
+
+CREATE TABLE T_Users (
+    id_user INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    alias VARCHAR(50) UNIQUE NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    games_won INT DEFAULT 0,
+    games_lost INT DEFAULT 0,
+    tournaments_won INT DEFAULT 0,
+    disqualifications INT DEFAULT 0,
+    disqualification_reasons TEXT,
+    avatar_url VARCHAR(255)
+);
+
+CREATE TABLE T_Admin (
+    id_admin INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE T_Organizer (
+    id_organizer INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    country VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE T_Judge (
+    id_judge INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    alias VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    avatar_url VARCHAR(255)
+);
+
+-- 2. Crear tablas que dependen de las anteriores
+CREATE TABLE T_Deck (
+    id_deck INT AUTO_INCREMENT PRIMARY KEY,
+    id_user INT NOT NULL,
+    UNIQUE(id_deck, id_user),
+    FOREIGN KEY (id_user) REFERENCES T_Users(id_user)
+);
+
+CREATE TABLE T_Tournaments (
+    id_tournament INT AUTO_INCREMENT PRIMARY KEY,
+    start_datetime DATETIME NOT NULL,
+    end_datetime DATETIME,
+    country VARCHAR(100) NOT NULL,
+    current_phase ENUM('Registration', 'Tournament', 'Finalization') NOT NULL,
+    id_organizer INT NOT NULL,
+    FOREIGN KEY (id_organizer) REFERENCES T_Organizer(id_organizer)
+);
+
+-- 3. Crear tablas de relación y dependencias adicionales
+CREATE TABLE T_Card_Series (
+    id_card INT NOT NULL,
+    id_series INT NOT NULL,
+    PRIMARY KEY (id_card, id_series),
+    FOREIGN KEY (id_card) REFERENCES T_Card(id_card),
+    FOREIGN KEY (id_series) REFERENCES T_Series(id_series)
+);
+
+CREATE TABLE T_Deck_Cards (
+    id_deck INT NOT NULL,
+    id_card INT NOT NULL,
+    PRIMARY KEY (id_deck, id_card),
+    FOREIGN KEY (id_deck) REFERENCES T_Deck(id_deck),
+    FOREIGN KEY (id_card) REFERENCES T_Card(id_card)
+);
+
+CREATE TABLE T_Tournament_Judges (
+    id_tournament INT NOT NULL,
+    id_judge INT NOT NULL,
+    PRIMARY KEY (id_tournament, id_judge),
+    FOREIGN KEY (id_tournament) REFERENCES T_Tournaments(id_tournament),
+    FOREIGN KEY (id_judge) REFERENCES T_Judge(id_judge)
+);
+
+CREATE TABLE T_Tournament_Series (
+    id_tournament INT NOT NULL,
+    id_series INT NOT NULL,
+    PRIMARY KEY (id_tournament, id_series),
+    FOREIGN KEY (id_tournament) REFERENCES T_Tournaments(id_tournament),
+    FOREIGN KEY (id_series) REFERENCES T_Series(id_series)
+);
+
+CREATE TABLE T_Tournament_Players (
+    id_tournament INT NOT NULL,
+    id_user INT NOT NULL,
+    id_deck INT NOT NULL,
+    PRIMARY KEY (id_tournament, id_user),
+    FOREIGN KEY (id_tournament) REFERENCES T_Tournaments(id_tournament),
+    FOREIGN KEY (id_user) REFERENCES T_Users(id_user),
+    FOREIGN KEY (id_deck) REFERENCES T_Deck(id_deck)
+);
+
+CREATE TABLE T_Games (
+    id_game INT AUTO_INCREMENT PRIMARY KEY,
+    start_datetime DATETIME NOT NULL,
+    end_datetime DATETIME NOT NULL,
+    id_player1 INT NOT NULL,
+    id_player2 INT NOT NULL,
+    id_tournament INT NOT NULL,
+    id_winner INT NULL,
+    round_number INT NOT NULL DEFAULT 1, -- Añadido para identificar la ronda
+    FOREIGN KEY (id_player1) REFERENCES T_Users(id_user),
+    FOREIGN KEY (id_player2) REFERENCES T_Users(id_user),
+    FOREIGN KEY (id_tournament) REFERENCES T_Tournaments(id_tournament),
+    FOREIGN KEY (id_winner) REFERENCES T_Users(id_user)
+);
+
+
+INSERT INTO T_Series (name, release_date) VALUES
+('Alpha', '2015-03-10'),
+('Beta', '2016-05-15'),
+('Gamma', '2017-07-20'),
+('Delta', '2018-09-25'),
+('Epsilon', '2019-11-30'),
+('Zeta', '2020-02-05'),
+('Eta', '2021-04-10'),
+('Theta', '2022-06-15'),
+('Iota', '2023-08-20'),
+('Kappa', '2024-10-25');
+
+
+
+INSERT INTO T_Card (illustration, attack, defense) VALUES
+('Zeus, Lord of Thunder', 3000, 2500),
+('Athena, Guardian of Wisdom', 2800, 2300),
+('Hades, King of the Underworld', 3200, 2700),
+('Poseidon, Ruler of the Seas', 3100, 2400),
+('Apollo, Bringer of Light', 2900, 2200),
+('Artemis, Huntress of the Moon', 2700, 2000),
+('Hermes, Messenger of the Gods', 2600, 2100),
+('Ares, God of War', 3300, 2600),
+('Hera, Queen of the Gods', 2800, 2400),
+('Demeter, Goddess of Harvest', 2500, 2200),
+('Persephone, Queen of the Underworld', 3100, 2400),
+('Hephaestus, God of Fire', 2700, 2600),
+('Dionysus, God of Wine', 2500, 2300),
+('Eros, God of Love', 2200, 2100),
+('Nike, Goddess of Victory', 2900, 2200),
+('Hestia, Goddess of the Hearth', 2400, 2500),
+('Atlas, Titan of Endurance', 3500, 2700),
+('Hercules, Hero of Strength', 3400, 2800),
+('Medusa, Gorgon of the Stone Gaze', 2800, 2100),
+('Cyclops, One-Eyed Monster', 2600, 2400),
+('Chiron, Centaur of Wisdom', 2700, 2300),
+('Minotaur, Beast of the Labyrinth', 3200, 2000),
+('Cerberus, Guard Dog of the Underworld', 3000, 2800),
+('Achilles, Hero of the Trojan War', 3200, 2400),
+('Orpheus, Musician of the Gods', 2200, 1800),
+('Medusa, Stone-Cursed Sorceress', 2600, 2400),
+('Sisyphus, Eternal Wanderer', 2500, 2700),
+('Cronus, King of the Titans', 3400, 2800),
+('Prometheus, Titan of Forethought', 3000, 2600),
+('Pandora, Keeper of the Box', 2700, 2300),
+('Themis, Goddess of Justice', 2900, 2200),
+('Nemesis, Goddess of Retribution', 2800, 2400),
+('Echidna, Mother of Monsters', 3300, 2100),
+('Typhon, Lord of Storms', 3200, 2300),
+('Pandora, Seeker of Hope', 2600, 2200),
+('Aetherion', 2000, 1500),
+('Hydraius', 1800, 1600),
+('Phoenixor', 2100, 1300),
+('Meduson', 2200, 1400),
+('Zeuslight', 2500, 1200),
+('Herculestron', 2400, 1500),
+('Minotaurax', 2200, 1700),
+('Aresbane', 2300, 1600),
+('Orpheon', 1900, 1800),
+('Chironis', 2100, 1400),
+('Cerberion', 2400, 1300),
+('Chronox', 2500, 1100),
+('Olympos', 2300, 1500),
+('Aphrodion', 2000, 2000),
+('Apolloid', 2100, 1700),
+('Athenaeus', 2300, 1400),
+('Erebuson', 2400, 1500),
+('Heliosun', 2500, 1200),
+('Titanon', 2600, 1100),
+('Gorgonix', 2300, 1600),
+('Hadescor', 2200, 1500),
+('Artemisior', 2100, 1400),
+('Kratosar', 2400, 1300),
+('Poseidion', 2500, 1200),
+('Medusix', 2000, 1800),
+('Perseuson', 2300, 1600),
+('Sirenon', 2200, 1500),
+('Apolloid', 2100, 1700),
+('Pandemonium', 2500, 1100),
+('Erosian', 2300, 1400),
+('Phantomus', 2400, 1300),
+('Nemeanox', 2200, 1700),
+('Herculeson', 2500, 1200),
+('Aeolosion', 2400, 1400),
+('Thanatosar', 2600, 1100),
+('Titanoson', 2500, 1300),
+('Hydrauson', 2200, 1600),
+('Minotaura', 2400, 1500),
+('Cerberian', 2300, 1700),
+('Zypheros', 2000, 1800),
+('Charybdion', 2100, 1600),
+('Erebuson', 2500, 1300),
+('Heraion', 2400, 1400),
+('Zephyrosar', 2200, 1500),
+('Nykterion', 2300, 1600),
+('Charybdion', 2100, 1700),
+('Icarion', 2400, 1200),
+('Aethirion', 2500, 1100);
+
+
+
+INSERT INTO T_Users (name, surname, alias, country, email, games_won, games_lost, tournaments_won, disqualifications, disqualification_reasons, avatar_url) VALUES
+('Alex', 'Smith', 'ThunderStrike', 'USA', 'alex.smith@email.com', 50, 20, 5, 1, 'Using unauthorized deck', 'https://example.com/avatars/alex.jpg'),
+('Maria', 'Gonzalez', 'DragonQueen', 'Spain', 'maria.gonzalez@email.com', 60, 15, 7, 0, NULL, 'https://example.com/avatars/maria.jpg'),
+('John', 'Doe', 'MasterMind', 'UK', 'john.doe@email.com', 40, 25, 3, 2, 'Behavioral issues', 'https://example.com/avatars/john.jpg'),
+('Sophia', 'Lee', 'ShadowStrike', 'South Korea', 'sophia.lee@email.com', 55, 18, 4, 0, NULL, 'https://example.com/avatars/sophia.jpg'),
+('Carlos', 'Martinez', 'FireFury', 'Mexico', 'carlos.martinez@email.com', 70, 10, 9, 0, NULL, 'https://example.com/avatars/carlos.jpg'),
+('Olivia', 'Brown', 'SteelWarrior', 'Canada', 'olivia.brown@email.com', 45, 30, 2, 1, 'Repeatedly missing tournaments', 'https://example.com/avatars/olivia.jpg'),
+('Liam', 'Johnson', 'WindMaster', 'Australia', 'liam.johnson@email.com', 35, 40, 1, 3, 'Cheating during games', 'https://example.com/avatars/liam.jpg'),
+('Emily', 'Davis', 'LightBringer', 'Germany', 'emily.davis@email.com', 50, 25, 6, 0, NULL, 'https://example.com/avatars/emily.jpg'),
+('James', 'Wilson', 'DarkKnight', 'USA', 'james.wilson@email.com', 65, 15, 8, 0, NULL, 'https://example.com/avatars/james.jpg'),
+('Chloe', 'Taylor', 'StormRider', 'France', 'chloe.taylor@email.com', 60, 20, 10, 0, NULL, 'https://example.com/avatars/chloe.jpg'),
+('Daniel', 'Martins', 'RedDragon', 'Brazil', 'daniel.martins@email.com', 30, 50, 1, 1, 'Game rigging', 'https://example.com/avatars/daniel.jpg'),
+('Nina', 'Graham', 'IcePhoenix', 'Ireland', 'nina.graham@email.com', 50, 20, 4, 0, NULL, 'https://example.com/avatars/nina.jpg'),
+('Leo', 'Hernandez', 'GoldenLion', 'Argentina', 'leo.hernandez@email.com', 45, 30, 2, 1, 'Time cheating', 'https://example.com/avatars/leo.jpg'),
+('Zoe', 'Clark', 'ThunderBolt', 'UK', 'zoe.clark@email.com', 65, 15, 6, 0, NULL, 'https://example.com/avatars/zoe.jpg'),
+('Isaac', 'Rodriguez', 'ShadowHunter', 'Mexico', 'isaac.rodriguez@email.com', 75, 10, 12, 0, NULL, 'https://example.com/avatars/isaac.jpg'),
+('Charlotte', 'Miller', 'IronFist', 'USA', 'charlotte.miller@email.com', 55, 25, 7, 1, 'Violation of tournament rules', 'https://example.com/avatars/charlotte.jpg'),
+('Benjamin', 'Perez', 'RedKnight', 'Spain', 'benjamin.perez@email.com', 60, 20, 8, 0, NULL, 'https://example.com/avatars/benjamin.jpg');
+
+INSERT INTO T_Users (name, surname, alias, country, email, games_won, games_lost, tournaments_won, disqualifications, disqualification_reasons, avatar_url) VALUES
+('Lucas', 'Anderson', 'ShadowFlame', 'Australia', 'lucas.anderson@email.com', 40, 35, 3, 0, NULL, 'https://example.com/avatars/lucas.jpg'),
+('Amelia', 'Evans', 'CrystalMage', 'Canada', 'amelia.evans@email.com', 50, 28, 5, 1, 'Unsportsmanlike conduct', 'https://example.com/avatars/amelia.jpg'),
+('Ethan', 'Garcia', 'StormBreaker', 'USA', 'ethan.garcia@email.com', 65, 20, 9, 0, NULL, 'https://example.com/avatars/ethan.jpg');
+
+
+INSERT INTO T_Admin (username) VALUES
+('MasterControl'),
+('Overlord'),
+('SupremeCommander');
+
+INSERT INTO T_Organizer (name, surname, email, country) VALUES
+('Yugi', 'Mutou', 'yugi.mutou@yugioh.com', 'Japan'),
+('Seto', 'Kaiba', 'seto.kaiba@kaiba.com', 'Japan'),
+('Joey', 'Wheeler', 'joey.wheeler@yugioh.com', 'USA'),
+('Mai', 'Valentine', 'mai.valentine@yugioh.com', 'USA'),
+('Téa', 'Gardner', 'tea.gardner@yugioh.com', 'Japan');
+
+INSERT INTO T_Judge (name, surname, alias, email, country, avatar_url) VALUES
+('Syrus', 'Truesdale', 'Syrus_T', 'syrus.truesdale@yugioh.com', 'USA', 'http://example.com/avatar/syrus.jpg'),
+('Marik', 'Ishtar', 'Marik_The_Scary', 'marik.ishtar@yugioh.com', 'Egypt', 'http://example.com/avatar/marik.jpg'),
+('Bakura', 'Ryou', 'Bakura_Darkness', 'bakura.ryou@yugioh.com', 'Japan', 'http://example.com/avatar/bakura.jpg'),
+('Maximillion', 'Pegasus', 'Max_Pegasus', 'maximillion.pegasus@yugioh.com', 'USA', 'http://example.com/avatar/maximillion.jpg'),
+('Yami', 'Yugi', 'Yami_Yugi', 'yami.yugi@yugioh.com', 'Japan', 'http://example.com/avatar/yami.jpg'),
+('Seto', 'Kaiba', 'Seto_Kaiba', 'seto.kaiba@yugioh.com', 'Japan', 'http://example.com/avatar/seto.jpg'),
+('Joey', 'Wheeler', 'Joey_The_Duelist', 'joey.wheeler@yugioh.com', 'USA', 'http://example.com/avatar/joey.jpg'),
+('Tea', 'Gardner', 'Tea_Gardner', 'tea.gardner@yugioh.com', 'USA', 'http://example.com/avatar/tea.jpg'),
+('Yugi', 'Mutou', 'Yugi_Mutou', 'yugi.mutou@yugioh.com', 'Japan', 'http://example.com/avatar/yugi.jpg'),
+('Shadi', 'Shadi', 'Shadi_The_Seer', 'shadi.shadi@yugioh.com', 'Egypt', 'http://example.com/avatar/shadi.jpg'),
+('Atem', 'Atem', 'Pharaoh_Atem', 'atem.pharaoh@yugioh.com', 'Egypt', 'http://example.com/avatar/atem.jpg'),
+('Rafael', 'Rafael', 'Rafael_The_Priest', 'rafael.rafael@yugioh.com', 'USA', 'http://example.com/avatar/rafael.jpg');
+
+
+INSERT INTO T_Deck (id_user) VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6)
+
+
+INSERT INTO T_Tournaments (start_datetime, end_datetime, country, current_phase, id_organizer) VALUES
+('2024-09-10 08:00:00', '2024-09-12 18:00:00', 'USA', 'Tournament', 1),
+('2024-08-20 09:00:00', '2024-08-22 19:00:00', 'Japan', 'Finalization', 2),
+('2024-07-15 10:00:00', '2024-07-17 17:00:00', 'Germany', 'Registration', 3);
+
+
+-- Relación de cartas con series
+INSERT INTO T_Card_Series (id_card, id_series) VALUES
+(1, 1), (1, 2), (1, 3),
+(2, 1), (2, 2), (2, 3),
+(3, 1), (3, 2), (3, 4),
+(4, 1), (4, 4), (4, 5),
+(5, 2), (5, 3), (5, 6),
+(6, 2), (6, 3), (6, 5),
+(7, 1), (7, 4), (7, 6),
+(8, 1), (8, 2), (8, 5),
+(9, 3), (9, 4), (9, 6),
+(10, 2), (10, 3), (10, 5),
+(11, 1), (11, 4), (11, 6),
+(12, 3), (12, 4), (12, 5),
+(13, 1), (13, 2), (13, 3),
+(14, 1), (14, 5), (14, 6),
+(15, 2), (15, 3), (15, 4),
+(16, 1), (16, 2), (16, 5),
+(17, 1), (17, 4), (17, 6),
+(18, 2), (18, 3), (18, 5),
+(19, 1), (19, 2), (19, 4),
+(20, 3), (20, 5), (20, 6),
+(21, 1), (21, 4), (21, 6),
+(22, 2), (22, 3), (22, 5),
+(23, 1), (23, 2), (23, 3),
+(24, 1), (24, 5), (24, 6),
+(25, 3), (25, 4), (25, 5),
+(26, 2), (26, 4), (26, 6),
+(27, 1), (27, 2), (27, 5),
+(28, 3), (28, 4), (28, 6),
+(29, 1), (29, 2), (29, 4),
+(30, 2), (30, 3), (30, 6),
+(31, 1), (31, 5), (31, 6),
+(32, 2), (32, 3), (32, 4),
+(33, 1), (33, 4), (33, 6),
+(34, 3), (34, 5), (34, 6),
+(35, 1), (35, 2), (35, 3),
+(36, 1), (36, 4), (36, 6),
+(37, 2), (37, 3), (37, 5),
+(38, 1), (38, 2), (38, 4),
+(39, 2), (39, 5), (39, 6),
+(40, 1), (40, 3), (40, 5);
+
+
+-- Relación de cartas con decks
+INSERT INTO T_Deck_Cards (id_deck, id_card) VALUES
+-- Deck 1
+(1, 1), (1, 2), (1, 3), (1, 4), (1, 5),
+(1, 6), (1, 7), (1, 8), (1, 9), (1, 10),
+(1, 11), (1, 12), (1, 13), (1, 14), (1, 15),
+-- Deck 2
+(2, 16), (2, 17), (2, 18), (2, 19), (2, 20),
+(2, 21), (2, 22), (2, 23), (2, 24), (2, 25),
+(2, 26), (2, 27), (2, 28), (2, 29), (2, 30),
+-- Deck 3
+(3, 31), (3, 32), (3, 33), (3, 34), (3, 35),
+(3, 36), (3, 37), (3, 38), (3, 39), (3, 40),
+(3, 41), (3, 42), (3, 43), (3, 44), (3, 45),
+-- Deck 4
+(4, 46), (4, 47), (4, 48), (4, 49), (4, 50),
+(4, 51), (4, 52), (4, 53), (4, 54), (4, 55),
+(4, 56), (4, 57), (4, 58), (4, 59), (4, 60),
+-- Deck 5
+(5, 61), (5, 62), (5, 63), (5, 64), (5, 65),
+(5, 66), (5, 67), (5, 68), (5, 69), (5, 70),
+(5, 71), (5, 72), (5, 73), (5, 74), (5, 75),
+-- Deck 6
+(6, 76), (6, 77), (6, 78), (6, 79), (6, 80),
+(6, 81), (6, 82), (6, 83), (6, 84), (6, 85),
+(6, 86), (6, 87), (6, 88), (6, 89), (6, 90);
+
+
+
+
+
+
+
+INSERT INTO T_Tournament_Judges (id_tournament, id_judge) VALUES
+(1, 1),
+(2, 2),
+(3, 3)
+
+INSERT INTO T_Tournament_Series (id_tournament, id_series) VALUES
+(1, 1), (1, 2), (1, 3), -- Torneo 1 permite las series 1, 2 y 3
+(2, 4), (2, 5), (2, 6), -- Torneo 2 permite las series 4, 5 y 6
+(3, 7), (3, 8), (3, 9); -- Torneo 3 permite las series 7, 8 y 9
+
+
+INSERT INTO T_Tournament_Players (id_tournament, id_user, id_deck) VALUES
+-- Jugadores para el Torneo 1
+(1, 1, 1),
+(1, 2, 2),
+(1, 3, 3),
+(1, 4, 4),
+(1, 5, 5),
+
+-- Jugadores para el Torneo 2
+(2, 6, 6),
+(2, 7, 3),
+(2, 8, 4),
+(2, 9, 5),
+(2, 10, 6),
+
+-- Jugadores para el Torneo 3
+(3, 1, 1),
+(3, 6, 6),
+(3, 2, 2),
+(3, 7, 6),
+(3, 3, 3);
+
+
+-- Insertar juegos para la primera ronda
+INSERT INTO T_Games (start_datetime, end_datetime, id_player1, id_player2, id_tournament, id_winner, round_number) VALUES
+('2025-01-15 10:00:00', '2025-01-15 10:30:00', 1, 2, 1, NULL, 1),  -- Primer juego
+('2025-01-15 10:30:00', '2025-01-15 11:00:00', 3, 4, 1, NULL, 1);  -- Segundo juego
+
+
+-- Insertar juegos para la segunda ronda
+INSERT INTO T_Games (start_datetime, end_datetime, id_player1, id_player2, id_tournament, id_winner, round_number) VALUES
+('2025-01-16 10:00:00', '2025-01-16 10:30:00', 1, 3, 1, NULL, 2);  -- Juego entre los ganadores de la primera ronda
+
+
+-- Insertar el juego de la final
+INSERT INTO T_Games (start_datetime, end_datetime, id_player1, id_player2, id_tournament, id_winner, round_number) VALUES
+('2025-01-17 10:00:00', '2025-01-17 10:30:00', 1, 3, 1, NULL, 3);  -- Final entre los ganadores de la segunda ronda
+
+
+

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "gyjaObKImV6IlxNSI1kGIX7eDEtUOnRCKdXPLE8opDU=",
+  "Source": "GameApp",
+  "BasePath": "_content/GameApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
