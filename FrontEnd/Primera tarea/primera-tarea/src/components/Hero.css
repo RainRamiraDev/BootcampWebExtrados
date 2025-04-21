@@ -1,0 +1,52 @@
+:root {
+  --color-primary: #d95d1e;     /* fuego anaranjado */
+  --color-secondary: #14110d;  /* marrón oscuro del borde */
+  --accent-color: #f4af53;     /* amarillo suave del fondo */
+  --leaf-green: #7a8530;       /* verde hoja */
+  --flower-orange: #e6621c;    /* flor naranja */
+  --text-light: #ffffff;
+  --button-bg: #f4af53;
+  --button-text: #3c2d13;
+  --button-hover: #fbe1b3;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: var(--button-hover);
+  }
+  

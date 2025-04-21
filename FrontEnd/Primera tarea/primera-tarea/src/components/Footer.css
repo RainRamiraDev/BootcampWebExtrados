@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #d95d1e;     /* fuego anaranjado */
+  --color-secondary: #14110d;  /* marrón oscuro del borde */
+  --accent-color: #f4af53;     /* amarillo suave del fondo */
+  --leaf-green: #7a8530;       /* verde hoja */
+  --flower-orange: #e6621c;    /* flor naranja */
+  --text-light: #ffffff;
+  --button-bg: #f4af53;
+  --button-text: #3c2d13;
+  --button-hover: #fbe1b3;
+}
+
+
+.footer {
+  background-color: var( --color-secondary);
+    color: var(--text-lighty);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+  

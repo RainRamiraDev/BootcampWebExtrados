@@ -1,12 +1,13 @@
 import Header from './components/Header';
-
-
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Header />
-      <p>Este es un proyecto básico usando componentes en React.</p>
+      <Hero />
+      <Footer/>
     </>
   );
 }

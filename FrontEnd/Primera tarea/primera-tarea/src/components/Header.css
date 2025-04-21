@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #d95d1e;     /* fuego anaranjado */
+  --color-secondary: #14110d; ;  /* marrón oscuro del borde */
+  --accent-color: #f4af53;     /* amarillo suave del fondo */
+  --leaf-green: #7a8530;       /* verde hoja */
+  --flower-orange: #e6621c;    /* flor naranja */
+  --text-light: #ffffff;
+  --button-bg: #f4af53;
+  --button-text: #3c2d13;
+  --button-hover: #fbe1b3;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: var(--color-secondary);
+  color: var( --flower-orange);
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var( --button-hover);
+}

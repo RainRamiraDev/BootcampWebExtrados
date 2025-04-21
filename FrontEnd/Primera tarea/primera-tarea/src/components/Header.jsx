@@ -1,9 +1,19 @@
-import '../styles/Header.css';
+import './Header.css';
+import Logo from './Logo';  // Importa el nuevo componente
 
 function Header() {
   return (
-    <header>
-      <h1>Bienvenidos a mi Proyecto en React</h1>
+    <header className='header'>
+      <div className='logo'>
+      <Logo />
+      </div>
+      <nav className='nav'>
+        <ul>
+            <li><a href='#inicio'>Inicio</a></li>
+            <li><a href='#sobre'>Nosotros</a></li>
+            <li><a href='#contacto'>Contacto</a></li>
+        </ul>
+      </nav>
     </header>
   );
 }
