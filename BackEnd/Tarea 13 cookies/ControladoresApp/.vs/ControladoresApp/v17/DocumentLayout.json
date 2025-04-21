@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{661229FB-DBE5-4B26-A8BC-A802BB55022E}|ControladoresApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\controladoresapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{661229FB-DBE5-4B26-A8BC-A802BB55022E}|ControladoresApp.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661229FB-DBE5-4B26-A8BC-A802BB55022E}|ControladoresApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\controladoresapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{661229FB-DBE5-4B26-A8BC-A802BB55022E}|ControladoresApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{665C1347-713E-4603-BB12-52C021614718}|..\\RefreshTokenApp\\RefreshTokenApp.csproj|c:\\repositorios\\bootcamp extrados\\bootcampwebextrados\\backend\\tarea 13 cookies\\refreshtokenapp\\service\\interface\\irefreshtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -13,21 +21,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 132,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IRefreshTokenService.cs",
-              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
-              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
-              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
-              "RelativeToolTip": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T18:13:51.805Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -43,6 +38,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAASwCcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:46:07.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\ControladoresApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T00:40:03.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "RelativeDocumentMoniker": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "ToolTip": "C:\\Repositorios\\Bootcamp Extrados\\BootcampWebExtrados\\BackEnd\\Tarea 13 cookies\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "RelativeToolTip": "..\\RefreshTokenApp\\Service\\Interface\\IRefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T18:13:51.805Z"
             }
           ]
         }

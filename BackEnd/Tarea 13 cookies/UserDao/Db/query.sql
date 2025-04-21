@@ -1,61 +1,123 @@
-CREATE DATABASE IF NOT EXISTS tarea13
-USE tarea13;
+-- AUXILIAR TABLES
+CREATE TABLE T_SERIES(
+	id_series INT PRIMARY KEY,
+	series_name VARCHAR(30) NOT NULL,
+	release_date DATETIME NOT NULL
+);
+GO
+CREATE TABLE T_CARDS(
+	id_card INT PRIMARY KEY,
+	illustration VARCHAR(30) NOT NULL,
+	attack INT,
+	deffense INT
+);
+GO
+CREATE TABLE T_COUNTRIES(
+	id_country INT PRIMARY KEY,
+	country_name VARCHAR(30)
+);
+GO
+CREATE TABLE T_ROLES(
+	id_rol INT PRIMARY KEY,
+	rol VARCHAR(20)
+);
+GO
 
--- Tabla libros
-CREATE TABLE libros (
-  isbn bigint NOT NULL PRIMARY KEY,
-  nombre VARCHAR(100) DEFAULT NULL,
-  autor VARCHAR(100) DEFAULT NULL,
-  genero VARCHAR(50) DEFAULT NULL
-)
+-- MAIN TABLES
 
--- Tabla users
-CREATE TABLE  users (
-  Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  Nombre VARCHAR(100) NOT NULL,
-  Email VARCHAR(150) NOT NULL UNIQUE,
-  Contrasenia VARCHAR(255) NOT NULL
-)
-
--- Tabla prestamos
-CREATE TABLE prestamos (
-  id_prestamo INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  id_usuario INT DEFAULT NULL,
-  isbn BIGINT DEFAULT NULL,
-  fecha_prestamo DATETIME DEFAULT NULL,
-  fecha_vencimiento DATETIME DEFAULT NULL,
-  CONSTRAINT fk_prestamo_libro FOREIGN KEY (isbn) REFERENCES libros (isbn),
-  CONSTRAINT fk_prestamo_users FOREIGN KEY (id_usuario) REFERENCES users (Id)
+CREATE TABLE T_USERS(
+	id_user INT PRIMARY KEY,
+	id_country INT,
+	id_rol INT,
+	fullname VARCHAR(50),
+	alias VARCHAR(20),
+	email VARCHAR(30),
+	games_won INT,
+	games_lost INT,
+	discualifications INT,
+	avatar_url VARCHAR(255),
+	passcode VARCHAR(10)
+CONSTRAINT fk_country_user FOREIGN KEY (id_country) REFERENCES T_COUNTRIES (id_country), 
+CONSTRAINT fk_rol_user FOREIGN KEY (id_rol) REFERENCES T_ROLES (id_rol)
+);
+GO
+CREATE TABLE T_REFRESH_TOKENS(
+	id_token INT PRIMARY KEY,
+	id_user INT,
+	token VARCHAR(255) NOT NULL UNIQUE,
+	expiry_date DATETIME NOT NULL,
+   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+CONSTRAINT fk_user_token FOREIGN KEY (id_user) REFERENCES T_USERS (id_user) 
+);
+GO
+CREATE TABLE T_CARD_SERIES(
+	id_card_series INT PRIMARY KEY,
+	id_card INT,
+	id_series INT 
+CONSTRAINT fk_card_cseries FOREIGN KEY (id_card) REFERENCES T_CARDS (id_card),
+CONSTRAINT fk_series_cseries FOREIGN KEY (id_series) REFERENCES T_CARDS (id_series)
 );
 
-CREATE TABLE refresh_tokens (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  user_id INT NOT NULL,
-  token VARCHAR(255) NOT NULL UNIQUE,
-  expiry_date DATETIME NOT NULL,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  CONSTRAINT fk_refresh_token_user FOREIGN KEY (user_id) REFERENCES users (Id) ON DELETE CASCADE
+CREATE TABLE T_TOURNAMENTS(
+	id_tourn INT PRIMARY KEY,
+	id_country INT,
+	id_organizer INT,
+	start_datetime DATETIME,
+	end_datetime DATETIME,
+	current_phase VARCHAR(10)
+CONSTRAINT fk_tourn_country FOREIGN KEY (id_country) REFERENCES T_COUNTRIES (id_country),
+CONSTRAINT fk_tourn_organizer FOREIGN KEY (id_organizer) REFERENCES T_USERS (id_organizer)
+);
+
+CREATE TABLE T_ROUNDS(
+	id_round INT PRIMARY KEY,
+	id_player1 INT,
+	id_player2 INT,
+	id_winner INT,
+	round_number INT
+CONSTRAINT fk_round_p1 FOREIGN KEY (id_player1) REFERENCES T_USERS (id_user),
+CONSTRAINT fk_round_p2 FOREIGN KEY (id_player2) REFERENCES T_USERS (id_user),
+CONSTRAINT fk_round_winner FOREIGN KEY (id_winner) REFERENCES T_USERS (id_user)
+);
+
+CREATE TABLE T_GAMES(
+	id_game INT PRIMARY KEY,
+	id_round INT,
+	id_tournament INT,
+	start_datetime DATETIME
+CONSTRAINT fk_game_round FOREIGN KEY (id_round) REFERENCES T_ROUNDS (id_round),
+CONSTRAINT fk_game_tournament FOREIGN KEY (id_tournament) REFERENCES T_TOURNAMENTS (id_tournament)
+
 );
 
 
+-- TRANSACCIONAL TABLES
 
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456789, 'El Señor de los Anillos', 'J.R.R. Tolkien', 'Fantasía');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456788, '1984', 'George Orwell', 'Distopía');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456787, 'Matar a un ruiseñor', 'Harper Lee', 'Ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456786, 'El Código Da Vinci', 'Dan Brown', 'Misterio');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456785, 'Harry Potter y la piedra filosofal', 'J.K. Rowling', 'Fantasía');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456784, 'Cien años de soledad', 'Gabriel García Márquez', 'Realismo mágico');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456783, 'El Gran Gatsby', 'F. Scott Fitzgerald', 'Clásico');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456782, 'Crónica de una muerte anunciada', 'Gabriel García Márquez', 'Ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456781, 'Orgullo y prejuicio', 'Jane Austen', 'Romántico');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456780, 'Fahrenheit 451', 'Ray Bradbury', 'Ciencia ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456779, 'El Hobbit', 'J.R.R. Tolkien', 'Fantasía');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456778, 'Revolución', 'Tom Peters', 'Negocios');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456777, 'La casa de los espíritus', 'Isabel Allende', 'Realismo mágico');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456776, 'El alquimista', 'Paulo Coelho', 'Ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456775, 'Los juegos del hambre', 'Suzanne Collins', 'Ciencia ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456774, 'La chica del tren', 'Paula Hawkins', 'Suspenso');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456773, 'El hombre en busca de sentido', 'Viktor Frankl', 'Psicología');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456772, 'Atrapados en el espejo', 'Khaled Hosseini', 'Ficción');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456771, 'Matar a un ruiseñor', 'Harper Lee', 'Drama');
-INSERT INTO libros (isbn, nombre, autor, genero) VALUES (123456770, 'La sombra del viento', 'Carlos Ruiz Zafón', 'Misterio');
+CREATE TABLE T_TOURN_JUDGES(
+	id_tourn_judges INT PRIMARY KEY,
+	id_tournament INT,
+	id_judge INT
+CONSTRAINT fk_tourn_judges_tourn FOREIGN KEY (id_tournament) REFERENCES T_TOURNAMENTS (id_tournament),
+CONSTRAINT fk_tourn_judges_judge FOREIGN KEY (id_judge) REFERENCES T_JUDGES (id_judge)
+);
+
+
+CREATE TABLE T_TOURN_SERIES(
+
+);
+
+
+CREATE TABLE T_TOURN_PLAYERS(
+
+);
+
+
+CREATE TABLE T_TOURN_DISQUALIFICATIONS(
+
+);
+
+CREATE TABLE T_TOURN_DECKS(
+
+);
+
+
