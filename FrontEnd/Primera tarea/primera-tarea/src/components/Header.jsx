@@ -1,6 +1,7 @@
 import './Header.css';
 import Logo from './Logo';  // Importa el nuevo componente
 
+
 function Header() {
   return (
     <header className='header'>
@@ -8,7 +9,7 @@ function Header() {
       <Logo />
       </div>
       <nav className='nav'>
-        <ul>
+        <ul> 
             <li><a href='#inicio'>Inicio</a></li>
             <li><a href='#sobre'>Nosotros</a></li>
             <li><a href='#contacto'>Contacto</a></li>

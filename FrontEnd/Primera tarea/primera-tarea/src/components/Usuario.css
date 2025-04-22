@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #d95d1e;     /* fuego anaranjado */
+    --color-secondary: #14110d;  /* marrón oscuro del borde */
+    --accent-color: #f4af53;     /* amarillo suave del fondo */
+    --leaf-green: #7a8530;       /* verde hoja */
+    --flower-orange: #e6621c;    /* flor naranja */
+    --text-light: #ffffff;
+    --button-bg: #f4af53;
+    --button-text: #3c2d13;
+    --button-hover: #fbe1b3;
+  }
+
+.usuario-card {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: var(--color-secondary);
+  }
+  
+  .usuario-card.activo {
+    border-left: 8px solid var(--leaf-green);
+  }
+  
+  .usuario-card.inactivo {
+    border-left: 8px solid var(--flower-orange);
+  }
+  
+  @media (min-width: 600px) {
+    .usuario-card {
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+  }
+  
