@@ -1,0 +1,32 @@
+/* src/components/PokemonInfo.css */
+.card {
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    color: #E60012
+  }
+  
+  .pokemonName {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+  }
+  
+  .titulo{
+    text-align: center;
+    color: #E60012
+  }
